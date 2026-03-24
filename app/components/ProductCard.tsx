@@ -1,21 +1,22 @@
 // app/components/ProductCard.tsx
 
 import Link from "next/link"
-import ScoreBadge from "./ScoreBadge"
 
-// ProductCard component to display product information and a link to the product details page
-export default function ProductCard({ product }: any) {   // Accepts a product object as a prop
+// ProductCard component to display a product's name, base score, and a link to view details
+export default function ProductCard({ product }: any) {
+    // Container for the product card with styling and content
     return (
-        // Container for the product card with styling
-        <div style={{ border: "1px solid #ccc", padding: 12, marginTop: 10 }}>
-            <h3>{product.name}</h3>
-
-            {/* Display the product's base score using the ScoreBadge component */}
-            <ScoreBadge score={product.baseScore} color={product.scoreColor} />
-
-            {/* Link to the product details page with the product ID */}
+        <div className="bg-white p-4 rounded shadow mb-3">
+            <h3 className="font-semibold">{product.name}</h3>
+            {/* Display the product's base score in a small font and gray color */}
+            <div className="mt-2 text-sm text-gray-600">
+                Score: {product.baseScore}
+            </div>
+            {/* Link to the product details page with the product ID as a parameter */}
             <Link href={`/products/${product.id}`}>
-                <button>View Details</button>
+                <button className="mt-3 text-blue-500">
+                    View Details →
+                </button>
             </Link>
         </div>
     )

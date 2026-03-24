@@ -4,7 +4,6 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -19,22 +18,21 @@ model User {
 }
 
 model UserProfile {
-  id        String @id @default(uuid())
-  userId    String @unique
-  skinType  String?
+  id          String   @id @default(uuid())
+  userId      String   @unique
+  skinType    String?
   preferences String[]
-  allergies  String[]
+  allergies   String[]
 
-  user User @relation(fields: [userId], references: [id])
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Product {
-  id         String   @id @default(uuid())
+  id         String  @id @default(uuid())
   name       String
   brand      String?
   category   String?
   barcode    String? @unique
-
   baseScore  Int?
   scoreColor String?
 
@@ -43,20 +41,32 @@ model Product {
 }
 
 model Ingredient {
-  id        String @id @default(uuid())
-  name      String @unique
-  riskLevel String
-  description String?
+  id           String  @id @default(uuid())
+  name         String  @unique
+  riskLevel    String
+  riskScore    Int
+  description  String?
+  reviewBucket String
 
+  aliases  IngredientAlias[]
   products ProductIngredient[]
+}
+
+model IngredientAlias {
+  id           String   @id @default(uuid())
+  alias        String   @unique
+  ingredientId String
+  createdAt    DateTime @default(now())
+
+  ingredient Ingredient @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
 }
 
 model ProductIngredient {
   productId    String
   ingredientId String
 
-  product    Product    @relation(fields: [productId], references: [id])
-  ingredient Ingredient @relation(fields: [ingredientId], references: [id])
+  product    Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
+  ingredient Ingredient @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
 
   @@id([productId, ingredientId])
 }
@@ -65,14 +75,12 @@ model Scan {
   id        String   @id @default(uuid())
   userId    String?
   productId String?
-
   score     Int?
   color     String?
-
   createdAt DateTime @default(now())
 
-  user    User?    @relation(fields: [userId], references: [id])
-  product Product? @relation(fields: [productId], references: [id])
+  user    User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  product Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
 }
 
 model Subscription {
@@ -80,5 +88,5 @@ model Subscription {
   userId String @unique
   plan   String
 
-  user User @relation(fields: [userId], references: [id])
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

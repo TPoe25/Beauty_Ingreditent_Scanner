@@ -1,0 +1,756 @@
+[
+  {
+    "canonical_name": "Water",
+    "aliases": [
+      "Aqua"
+    ],
+    "category": "solvent",
+    "risk_level_starter": "low",
+    "risk_score_starter": 0,
+    "concern_tags": [
+      "base"
+    ],
+    "notes": "Common solvent/base ingredient.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Glycerin",
+    "aliases": [
+      "Glycerol"
+    ],
+    "category": "humectant",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "hydrating"
+    ],
+    "notes": "Widely used humectant.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Aloe Barbadensis Leaf Juice",
+    "aliases": [
+      "Aloe Vera"
+    ],
+    "category": "botanical",
+    "risk_level_starter": "low",
+    "risk_score_starter": 1,
+    "concern_tags": [
+      "soothing"
+    ],
+    "notes": "Often used for soothing/hydration.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Squalane",
+    "aliases": [],
+    "category": "emollient",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "barrier_support"
+    ],
+    "notes": "Common emollient.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Sodium Hyaluronate",
+    "aliases": [
+      "Hyaluronic Acid"
+    ],
+    "category": "humectant",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "hydrating"
+    ],
+    "notes": "Humectant used for moisture retention.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Niacinamide",
+    "aliases": [
+      "Vitamin B3"
+    ],
+    "category": "active",
+    "risk_level_starter": "low",
+    "risk_score_starter": 3,
+    "concern_tags": [
+      "brightening",
+      "barrier_support"
+    ],
+    "notes": "Generally low-concern cosmetic active.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Panthenol",
+    "aliases": [
+      "Pro-Vitamin B5"
+    ],
+    "category": "humectant",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "soothing",
+      "hydrating"
+    ],
+    "notes": "Common conditioning ingredient.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Allantoin",
+    "aliases": [],
+    "category": "skin_conditioning",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "soothing"
+    ],
+    "notes": "Skin-conditioning agent.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Tocopherol",
+    "aliases": [
+      "Vitamin E"
+    ],
+    "category": "antioxidant",
+    "risk_level_starter": "low",
+    "risk_score_starter": 3,
+    "concern_tags": [
+      "antioxidant"
+    ],
+    "notes": "Common antioxidant.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Caprylic/Capric Triglyceride",
+    "aliases": [],
+    "category": "emollient",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "emollient"
+    ],
+    "notes": "Common lightweight emollient.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Butyrospermum Parkii Butter",
+    "aliases": [
+      "Shea Butter"
+    ],
+    "category": "emollient",
+    "risk_level_starter": "low",
+    "risk_score_starter": 3,
+    "concern_tags": [
+      "emollient"
+    ],
+    "notes": "Can be rich/heavy; often low concern.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Cetearyl Alcohol",
+    "aliases": [],
+    "category": "fatty_alcohol",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "emollient"
+    ],
+    "notes": "Fatty alcohol, not the same as drying alcohols.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Cetyl Alcohol",
+    "aliases": [],
+    "category": "fatty_alcohol",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "emollient"
+    ],
+    "notes": "Fatty alcohol used as emollient/thickener.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Stearyl Alcohol",
+    "aliases": [],
+    "category": "fatty_alcohol",
+    "risk_level_starter": "low",
+    "risk_score_starter": 2,
+    "concern_tags": [
+      "emollient"
+    ],
+    "notes": "Fatty alcohol used as emollient/thickener.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Dimethicone",
+    "aliases": [],
+    "category": "silicone",
+    "risk_level_starter": "low",
+    "risk_score_starter": 3,
+    "concern_tags": [
+      "occlusive"
+    ],
+    "notes": "Common skin protectant/texture enhancer.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Cyclopentasiloxane",
+    "aliases": [
+      "D5"
+    ],
+    "category": "silicone",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 10,
+    "concern_tags": [
+      "environmental_concern"
+    ],
+    "notes": "Often flagged for environmental persistence discussions.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Phenoxyethanol",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 18,
+    "concern_tags": [
+      "preservative"
+    ],
+    "notes": "Common preservative; often screened as moderate concern.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Ethylhexylglycerin",
+    "aliases": [],
+    "category": "preservative_booster",
+    "risk_level_starter": "low",
+    "risk_score_starter": 4,
+    "concern_tags": [
+      "preservative"
+    ],
+    "notes": "Often used with preservative systems.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Sodium Benzoate",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "low",
+    "risk_score_starter": 5,
+    "concern_tags": [
+      "preservative"
+    ],
+    "notes": "Allowed preservative in cosmetics under EU annexes.",
+    "source_basis": "CosIng/EC Annex V"
+  },
+  {
+    "canonical_name": "Potassium Sorbate",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "low",
+    "risk_score_starter": 5,
+    "concern_tags": [
+      "preservative"
+    ],
+    "notes": "Allowed preservative in cosmetics under EU annexes.",
+    "source_basis": "CosIng/EC Annex V"
+  },
+  {
+    "canonical_name": "Benzoic Acid",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "low",
+    "risk_score_starter": 6,
+    "concern_tags": [
+      "preservative"
+    ],
+    "notes": "Allowed preservative in cosmetics under EU annexes.",
+    "source_basis": "CosIng/EC Annex V"
+  },
+  {
+    "canonical_name": "Citric Acid",
+    "aliases": [],
+    "category": "pH_adjuster",
+    "risk_level_starter": "low",
+    "risk_score_starter": 3,
+    "concern_tags": [
+      "pH_adjuster"
+    ],
+    "notes": "Common pH adjuster.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Lactic Acid",
+    "aliases": [],
+    "category": "AHA",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 12,
+    "concern_tags": [
+      "exfoliation",
+      "sun_sensitivity"
+    ],
+    "notes": "Can increase sensitivity depending on use level and context.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Glycolic Acid",
+    "aliases": [],
+    "category": "AHA",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 15,
+    "concern_tags": [
+      "exfoliation",
+      "sun_sensitivity"
+    ],
+    "notes": "AHA often screened for irritation/sun-sensitivity context.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Salicylic Acid",
+    "aliases": [
+      "BHA"
+    ],
+    "category": "BHA",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 15,
+    "concern_tags": [
+      "exfoliation",
+      "irritation"
+    ],
+    "notes": "BHA used for exfoliation; context matters.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Fragrance",
+    "aliases": [
+      "Parfum"
+    ],
+    "category": "fragrance",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 25,
+    "concern_tags": [
+      "irritation",
+      "allergen"
+    ],
+    "notes": "Common catch-all fragrance label; often flagged for sensitivity.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Parfum",
+    "aliases": [
+      "Fragrance"
+    ],
+    "category": "fragrance",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 25,
+    "concern_tags": [
+      "irritation",
+      "allergen"
+    ],
+    "notes": "Alias of fragrance for normalization.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Limonene",
+    "aliases": [],
+    "category": "fragrance_component",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 12,
+    "concern_tags": [
+      "allergen"
+    ],
+    "notes": "Fragrance allergen concern in some users.",
+    "source_basis": "CosIng/FDA"
+  },
+  {
+    "canonical_name": "Linalool",
+    "aliases": [],
+    "category": "fragrance_component",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 12,
+    "concern_tags": [
+      "allergen"
+    ],
+    "notes": "Fragrance allergen concern in some users.",
+    "source_basis": "CosIng/FDA"
+  },
+  {
+    "canonical_name": "Citral",
+    "aliases": [],
+    "category": "fragrance_component",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 12,
+    "concern_tags": [
+      "allergen"
+    ],
+    "notes": "Fragrance allergen concern in some users.",
+    "source_basis": "CosIng/FDA"
+  },
+  {
+    "canonical_name": "Geraniol",
+    "aliases": [],
+    "category": "fragrance_component",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 12,
+    "concern_tags": [
+      "allergen"
+    ],
+    "notes": "Fragrance allergen concern in some users.",
+    "source_basis": "CosIng/FDA"
+  },
+  {
+    "canonical_name": "Benzyl Alcohol",
+    "aliases": [],
+    "category": "preservative_fragrance",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 10,
+    "concern_tags": [
+      "allergen",
+      "irritation"
+    ],
+    "notes": "Can function as preservative/fragrance component.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Alcohol Denat.",
+    "aliases": [
+      "Denatured Alcohol"
+    ],
+    "category": "solvent",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 12,
+    "concern_tags": [
+      "drying",
+      "irritation"
+    ],
+    "notes": "Often flagged in leave-on products for dryness/irritation potential.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Ethanol",
+    "aliases": [
+      "Alcohol"
+    ],
+    "category": "solvent",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 10,
+    "concern_tags": [
+      "drying"
+    ],
+    "notes": "Can be drying depending on formula and use.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Isopropyl Alcohol",
+    "aliases": [],
+    "category": "solvent",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 15,
+    "concern_tags": [
+      "drying",
+      "irritation"
+    ],
+    "notes": "Often screened as drying/irritating.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Sodium Lauryl Sulfate",
+    "aliases": [
+      "SLS"
+    ],
+    "category": "surfactant",
+    "risk_level_starter": "high",
+    "risk_score_starter": 30,
+    "concern_tags": [
+      "irritation"
+    ],
+    "notes": "Commonly flagged for irritation potential.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Sodium Laureth Sulfate",
+    "aliases": [
+      "SLES"
+    ],
+    "category": "surfactant",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 18,
+    "concern_tags": [
+      "irritation"
+    ],
+    "notes": "Often screened lower than SLS but still flagged by some users.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Methylparaben",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "high",
+    "risk_score_starter": 35,
+    "concern_tags": [
+      "paraben"
+    ],
+    "notes": "Common consumer-screening concern ingredient.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Propylparaben",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "high",
+    "risk_score_starter": 35,
+    "concern_tags": [
+      "paraben"
+    ],
+    "notes": "Common consumer-screening concern ingredient.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Butylparaben",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "high",
+    "risk_score_starter": 40,
+    "concern_tags": [
+      "paraben"
+    ],
+    "notes": "Common consumer-screening concern ingredient.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "DMDM Hydantoin",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "high",
+    "risk_score_starter": 35,
+    "concern_tags": [
+      "formaldehyde_releaser"
+    ],
+    "notes": "Often flagged in consumer-screening systems.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Imidazolidinyl Urea",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "high",
+    "risk_score_starter": 35,
+    "concern_tags": [
+      "formaldehyde_releaser"
+    ],
+    "notes": "Often flagged in consumer-screening systems.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Diazolidinyl Urea",
+    "aliases": [],
+    "category": "preservative",
+    "risk_level_starter": "high",
+    "risk_score_starter": 35,
+    "concern_tags": [
+      "formaldehyde_releaser"
+    ],
+    "notes": "Often flagged in consumer-screening systems.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Triclosan",
+    "aliases": [],
+    "category": "antimicrobial",
+    "risk_level_starter": "high",
+    "risk_score_starter": 40,
+    "concern_tags": [
+      "restricted_banned_context"
+    ],
+    "notes": "Often heavily flagged; regulatory context varies by product use.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Talc",
+    "aliases": [],
+    "category": "mineral",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 15,
+    "concern_tags": [
+      "contamination_context"
+    ],
+    "notes": "Needs context; screening systems often handle cautiously.",
+    "source_basis": "FDA/PubChem"
+  },
+  {
+    "canonical_name": "BHA",
+    "aliases": [
+      "Butylated Hydroxyanisole"
+    ],
+    "category": "antioxidant",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 18,
+    "concern_tags": [
+      "consumer_screening_flag"
+    ],
+    "notes": "Often screened cautiously in consumer apps.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "BHT",
+    "aliases": [
+      "Butylated Hydroxytoluene"
+    ],
+    "category": "antioxidant",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 18,
+    "concern_tags": [
+      "consumer_screening_flag"
+    ],
+    "notes": "Often screened cautiously in consumer apps.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "PEG-100 Stearate",
+    "aliases": [],
+    "category": "emulsifier",
+    "risk_level_starter": "low",
+    "risk_score_starter": 6,
+    "concern_tags": [
+      "PEG"
+    ],
+    "notes": "PEG ingredients are often consumer-flagged but commonly used.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Polysorbate 20",
+    "aliases": [],
+    "category": "emulsifier",
+    "risk_level_starter": "low",
+    "risk_score_starter": 5,
+    "concern_tags": [
+      "emulsifier"
+    ],
+    "notes": "Common emulsifier.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Cocamidopropyl Betaine",
+    "aliases": [
+      "CAPB"
+    ],
+    "category": "surfactant",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 12,
+    "concern_tags": [
+      "irritation",
+      "allergen"
+    ],
+    "notes": "Can be an irritant for some users.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Retinol",
+    "aliases": [
+      "Vitamin A"
+    ],
+    "category": "active",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 18,
+    "concern_tags": [
+      "irritation",
+      "sensitivity"
+    ],
+    "notes": "Potent active; user context matters.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Retinyl Palmitate",
+    "aliases": [],
+    "category": "active",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 14,
+    "concern_tags": [
+      "sensitivity"
+    ],
+    "notes": "Retinoid derivative; context matters.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Ascorbic Acid",
+    "aliases": [
+      "Vitamin C"
+    ],
+    "category": "active",
+    "risk_level_starter": "low",
+    "risk_score_starter": 5,
+    "concern_tags": [
+      "antioxidant"
+    ],
+    "notes": "Common antioxidant active; irritation depends on formula.",
+    "source_basis": "CosIng/PubChem"
+  },
+  {
+    "canonical_name": "Titanium Dioxide",
+    "aliases": [],
+    "category": "UV_filter_pigment",
+    "risk_level_starter": "low",
+    "risk_score_starter": 4,
+    "concern_tags": [
+      "mineral_uv_filter"
+    ],
+    "notes": "Widely used pigment/UV filter; route/form matters.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Zinc Oxide",
+    "aliases": [],
+    "category": "UV_filter",
+    "risk_level_starter": "low",
+    "risk_score_starter": 4,
+    "concern_tags": [
+      "mineral_uv_filter"
+    ],
+    "notes": "Widely used mineral UV filter.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Oxybenzone",
+    "aliases": [
+      "Benzophenone-3"
+    ],
+    "category": "UV_filter",
+    "risk_level_starter": "high",
+    "risk_score_starter": 30,
+    "concern_tags": [
+      "consumer_screening_flag"
+    ],
+    "notes": "Frequently flagged in sunscreen discussions.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Octinoxate",
+    "aliases": [
+      "Ethylhexyl Methoxycinnamate"
+    ],
+    "category": "UV_filter",
+    "risk_level_starter": "moderate",
+    "risk_score_starter": 20,
+    "concern_tags": [
+      "consumer_screening_flag"
+    ],
+    "notes": "Frequently screened cautiously in sunscreen discussions.",
+    "source_basis": "FDA/CosIng"
+  },
+  {
+    "canonical_name": "Coal Tar",
+    "aliases": [],
+    "category": "color_additive_context",
+    "risk_level_starter": "high",
+    "risk_score_starter": 40,
+    "concern_tags": [
+      "restricted_context"
+    ],
+    "notes": "Color additives have distinct FDA approval context.",
+    "source_basis": "FDA"
+  }
+]

@@ -1,34 +1,29 @@
-// app/api/scans/route.ts
+// app/api/scans/upload/route.ts
 
-import { prisma } from "@/lib/prisma"
-import { calculateScore } from "@/lib/scoring"
+// API route to handle file uploads and perform text detection using Google Cloud Vision API
+import vision from "@google-cloud/vision"
 
-// This function handles the POST request to create a new scan. It retrieves the product and its ingredients from the database, calculates the score based on the ingredients, and then creates a new scan record in the database with the calculated score and color.
+// Create a new Vision client using the Google Cloud Vision API credentials
+const client = new vision.ImageAnnotatorClient({
+  keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS
+})
+
+// API route to handle file uploads and perform text detection using Google Cloud Vision API
 export async function POST(req: Request) {
-  const body = await req.json()
+  const formData = await req.formData()
+  const file = formData.get("file") as File
 
-  // Retrieve the product and its ingredients from the database using Prisma. The product is identified by the productId provided in the request body. The ingredients are included in the query result, and each ingredient's details are also included.
-  const product = await prisma.product.findUnique({
-    where: { id: body.productId },
-    include: {
-      ingredients: { include: { ingredient: true } }
-    }
+  // Read the uploaded file as an array buffer
+  const bytes = await file.arrayBuffer()
+
+  // Detect text in the uploaded image using Google Cloud Vision API
+  const [result] = await client.textDetection({
+    image: { content: Buffer.from(bytes) }
   })
 
-  // If the product is not found or does not have ingredients, return a 404 Not Found response.
-  const ingredients = product?.ingredients.map(i => i.ingredient)
+  // Extract the detected text from the response
+  const text = result.fullTextAnnotation?.text || ""
 
-  // If the ingredients are not provided, return a 400 Bad Request response.
-  const result = calculateScore(ingredients || [])
-
-  // If the score calculation fails, return a 500 Internal Server Error response.
-  const scan = await prisma.scan.create({
-    data: {
-      productId: product?.id,
-      score: result.score,
-      color: result.color
-    }
-  })
-  // Return the created scan record as the response.
-  return Response.json(scan)
+  // Return the extracted text as a JSON response
+  return Response.json({ text })
 }
