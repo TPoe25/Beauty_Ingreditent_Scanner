@@ -1,13 +1,10 @@
 # AI Beauty Product Scanner
 ## Overview
 
-```
-AI Beauty Product Scanner is a mobile-first web application that helps users understand what is inside their beauty and skincare products. By scanning or searching a product, users receive a safety score, ingredient breakdown, and AI-generated explanations to help them make better decisions.
-```
 
-```
-This project was built as a capstone with the goal of creating a real-world, scalable product that goes beyond basic ingredient checkers by adding personalization, comparison tools, and AI-driven insights.
-```
+### AI Beauty Product Scanner is a mobile-first web application that helps users understand what is inside their beauty and skincare products. By scanning or searching a product, users receive a safety score, ingredient breakdown, and AI-generated explanations to help them make better decisions.
+
+### This project was built as a capstone with the goal of creating a real-world, scalable product that goes beyond basic ingredient checkers by adding personalization, comparison tools, and AI-driven insights.
 
 # Problem
 
