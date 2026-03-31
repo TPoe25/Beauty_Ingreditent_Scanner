@@ -1,14 +1,60 @@
-// app/api/scans/upload/route.ts
+import vision from "@google-cloud/vision";
+import { extractIngredientCandidates } from "@/lib/parseIngredients";
+import { matchIngredients } from "@/lib/matchIngredients";
 
-// This function handles the POST request to upload an image and extract the ingredients using OCR. It takes the uploaded image file as input and returns the extracted text.
+export const runtime = "nodejs";
+
+function createVisionClient() {
+  const keyFilename = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+
+  if (!keyFilename) {
+    throw new Error("GOOGLE_APPLICATION_CREDENTIALS is not configured.");
+  }
+
+  return new vision.ImageAnnotatorClient({ keyFilename });
+}
+
 export async function POST(req: Request) {
-  await req.formData();
+  try {
+    const formData = await req.formData();
+    const file = formData.get("file");
 
-  // 🔥 Replace with OCR later
-  const fakeExtractedText = "Water, Glycerin, Fragrance";
+    if (!(file instanceof File)) {
+      return Response.json({ error: "Image file is required." }, { status: 400 });
+    }
 
-  // In a real implementation, you would use an OCR library to extract the text from the uploaded image file. For example, you could use Tesseract.js or a similar library to perform OCR on the image and extract the ingredients list.
-  return Response.json({
-    text: fakeExtractedText
-  });
+    const bytes = Buffer.from(await file.arrayBuffer());
+    const client = createVisionClient();
+    const [result] = await client.textDetection({
+      image: { content: bytes },
+    });
+
+    const text = result.fullTextAnnotation?.text || result.textAnnotations?.[0]?.description || "";
+
+    if (!text.trim()) {
+      return Response.json({
+        text: "",
+        parsedIngredients: [],
+        matchedIngredients: [],
+        source: "google-vision",
+      });
+    }
+
+    const parsedIngredients = extractIngredientCandidates(text);
+    const matchedIngredients = await matchIngredients(parsedIngredients);
+
+    return Response.json({
+      text,
+      parsedIngredients,
+      matchedIngredients,
+      source: "google-vision",
+      filename: file.name,
+    });
+  } catch (error) {
+    console.error("OCR upload failed", error);
+    return Response.json(
+      { error: "OCR scan failed. Please verify your Google Vision credentials." },
+      { status: 500 }
+    );
+  }
 }

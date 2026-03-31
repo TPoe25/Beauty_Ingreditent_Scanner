@@ -17,6 +17,7 @@
     "db:seed": "node --import tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@google-cloud/vision": "^5.3.5",
     "@prisma/adapter-pg": "^7.5.0",
     "@prisma/client": "^7.5.0",
     "bcryptjs": "3.0.3",
