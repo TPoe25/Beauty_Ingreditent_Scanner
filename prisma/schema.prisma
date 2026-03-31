@@ -7,10 +7,10 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  password  String?
-  createdAt DateTime @default(now())
+  id           String         @id @default(uuid())
+  email        String         @unique
+  password     String?
+  createdAt    DateTime       @default(now())
 
   profile      UserProfile?
   scans        Scan[]
@@ -21,72 +21,75 @@ model UserProfile {
   id          String   @id @default(uuid())
   userId      String   @unique
   skinType    String?
-  preferences String[]
-  allergies   String[]
+  preferences Json?
+  allergies   Json?
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Product {
-  id         String  @id @default(uuid())
-  name       String
-  brand      String?
-  category   String?
-  barcode    String? @unique
-  baseScore  Int?
-  scoreColor String?
+  id          String              @id @default(uuid())
+  name        String
+  brand       String?
+  category    String?
+  barcode     String?             @unique
+  baseScore   Int?
+  scoreColor  String?
 
   ingredients ProductIngredient[]
   scans       Scan[]
 }
 
 model Ingredient {
-  id           String  @id @default(uuid())
-  name         String  @unique
+  id           String             @id @default(uuid())
+  name         String             @unique
   riskLevel    String
   riskScore    Int
   description  String?
   reviewBucket String
+  category     String?
+  source       String?
+  concerns     Json?
 
-  aliases  IngredientAlias[]
-  products ProductIngredient[]
+  aliases      IngredientAlias[]
+  products     ProductIngredient[]
 }
 
 model IngredientAlias {
-  id           String   @id @default(uuid())
-  alias        String   @unique
+  id           String      @id @default(uuid())
+  alias        String      @unique
   ingredientId String
-  createdAt    DateTime @default(now())
+  createdAt    DateTime    @default(now())
 
-  ingredient Ingredient @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
+  ingredient   Ingredient  @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
 }
 
 model ProductIngredient {
   productId    String
   ingredientId String
 
-  product    Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
-  ingredient Ingredient @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
+  product      Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+  ingredient   Ingredient  @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
 
   @@id([productId, ingredientId])
 }
 
 model Scan {
-  id        String   @id @default(uuid())
-  userId    String?
-  productId String?
-  score     Int?
-  color     String?
-  createdAt DateTime @default(now())
+  id          String    @id @default(uuid())
+  userId      String?
+  productId   String?
+  score       Int?
+  color       String?
+  createdAt   DateTime  @default(now())
 
-  user    User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
-  product Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  user        User?     @relation(fields: [userId], references: [id], onDelete: SetNull)
+  product     Product?  @relation(fields: [productId], references: [id], onDelete: SetNull)
 }
 
 model Subscription {
-  id     String @id @default(uuid())
-  userId String @unique
-  plan   String
+  id          String    @id @default(uuid())
+  userId      String    @unique
+  plan        String
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
