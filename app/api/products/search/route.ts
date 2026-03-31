@@ -68,7 +68,17 @@ export async function GET(req: Request) {
       },
     });
 
-    return Response.json(products);
+    return Response.json(
+      products.map((product) => ({
+        id: product.id,
+        name: product.name,
+        brand: product.brand,
+        baseScore: product.baseScore,
+        ingredientPreview: product.ingredients
+          .slice(0, 3)
+          .map((item) => item.ingredient.name),
+      }))
+    );
   } catch (error) {
     console.error("Product search failed", error);
     return Response.json({ error: "Unable to search products." }, { status: 500 });

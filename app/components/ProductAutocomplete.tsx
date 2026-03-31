@@ -8,6 +8,7 @@ type ProductOption = {
   name: string;
   brand?: string | null;
   baseScore?: number | null;
+  ingredientPreview?: string[];
 };
 
 type ProductAutocompleteProps = {
@@ -119,6 +120,11 @@ export default function ProductAutocomplete({
                 <div className="mt-1 text-xs text-neutral-500">
                   {product.brand || "No brand"} • Score {product.baseScore ?? "N/A"}
                 </div>
+                {product.ingredientPreview && product.ingredientPreview.length > 0 && (
+                  <div className="mt-2 text-xs text-neutral-600">
+                    Ingredients: {product.ingredientPreview.join(", ")}
+                  </div>
+                )}
               </button>
             ))
           )}
