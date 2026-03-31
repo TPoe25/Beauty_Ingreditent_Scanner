@@ -7,11 +7,27 @@ export const runtime = "nodejs";
 
 function createVisionClient() {
   if (env.GOOGLE_VISION_CREDENTIALS_JSON) {
-    const credentials = JSON.parse(env.GOOGLE_VISION_CREDENTIALS_JSON) as {
+    let credentials: {
       client_email?: string;
       private_key?: string;
       project_id?: string;
     };
+
+    try {
+      credentials = JSON.parse(env.GOOGLE_VISION_CREDENTIALS_JSON) as {
+        client_email?: string;
+        private_key?: string;
+        project_id?: string;
+      };
+    } catch {
+      throw new Error("GOOGLE_VISION_CREDENTIALS_JSON is not valid JSON.");
+    }
+
+    if (!credentials.client_email || !credentials.private_key) {
+      throw new Error(
+        "GOOGLE_VISION_CREDENTIALS_JSON is missing client_email or private_key."
+      );
+    }
 
     return new vision.ImageAnnotatorClient({
       credentials: {
@@ -71,8 +87,17 @@ export async function POST(req: Request) {
     });
   } catch (error) {
     console.error("OCR upload failed", error);
+
+    const message =
+      error instanceof Error ? error.message : "Unknown OCR configuration error.";
+
     return Response.json(
-      { error: "OCR scan failed. Please verify your Google Vision credentials." },
+      {
+        error:
+          env.NODE_ENV === "development"
+            ? `OCR scan failed: ${message}`
+            : "OCR scan failed. Please verify your Google Vision credentials.",
+      },
       { status: 500 }
     );
   }
