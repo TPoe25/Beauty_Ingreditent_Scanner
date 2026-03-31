@@ -3,13 +3,34 @@
 import { useState } from "react";
 
 type CompareResponse = {
+  ingredientDetails: {
+    name: string;
+    riskLevel: string;
+    riskScore: number;
+    category?: string | null;
+    source?: string | null;
+    reviewBucket: string;
+    description?: string | null;
+    concerns: string[];
+    aliases: string[];
+  };
   productA: {
     id: string;
     name: string;
     brand?: string | null;
     score: number;
     color: string;
-    flaggedIngredients: string[];
+    flaggedIngredients: {
+      name: string;
+      riskLevel: string;
+      riskScore: number;
+      category?: string | null;
+      source?: string | null;
+      reviewBucket: string;
+      description?: string | null;
+      concerns: string[];
+      aliases: string[];
+    }[];
   };
   productB: {
     id: string;
@@ -17,7 +38,17 @@ type CompareResponse = {
     brand?: string | null;
     score: number;
     color: string;
-    flaggedIngredients: string[];
+    flaggedIngredients: {
+      name: string;
+      riskLevel: string;
+      riskScore: number;
+      category?: string | null;
+      source?: string | null;
+      reviewBucket: string;
+      description?: string | null;
+      concerns: string[];
+      aliases: string[];
+    }[];
   };
   better: "A" | "B" | "Tie";
   summary: string;
@@ -197,10 +228,54 @@ export default function ComparePage() {
                     <ul className="mt-3 space-y-2">
                       {result.productA.flaggedIngredients.map((ingredient) => (
                         <li
-                          key={ingredient}
+                          key={ingredient.name}
                           className="rounded-2xl bg-neutral-50 px-4 py-3 text-sm text-neutral-700"
                         >
-                          {ingredient}
+                          <div className="flex items-center justify-between gap-3">
+                            <span>{ingredient.name}</span>
+                            <span className="text-xs uppercase tracking-wide text-neutral-500">
+                              {ingredient.riskLevel}
+                            </span>
+                          </div>
+                          <details className="mt-2 rounded-xl bg-white p-3">
+                            <summary className="cursor-pointer font-medium text-neutral-700">
+                              More ingredient info
+                            </summary>
+                            <div className="mt-3 space-y-2 text-neutral-600">
+                              <p>
+                                <span className="font-medium text-neutral-800">Risk score:</span>{" "}
+                                {ingredient.riskScore}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Category:</span>{" "}
+                                {ingredient.category || "Unknown"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Source:</span>{" "}
+                                {ingredient.source || "Unknown"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Review bucket:</span>{" "}
+                                {ingredient.reviewBucket}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Aliases:</span>{" "}
+                                {ingredient.aliases.length
+                                  ? ingredient.aliases.join(", ")
+                                  : "None"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Concerns:</span>{" "}
+                                {ingredient.concerns.length
+                                  ? ingredient.concerns.join(", ")
+                                  : "None listed"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Description:</span>{" "}
+                                {ingredient.description || "No description available yet."}
+                              </p>
+                            </div>
+                          </details>
                         </li>
                       ))}
                     </ul>
@@ -244,10 +319,54 @@ export default function ComparePage() {
                     <ul className="mt-3 space-y-2">
                       {result.productB.flaggedIngredients.map((ingredient) => (
                         <li
-                          key={ingredient}
+                          key={ingredient.name}
                           className="rounded-2xl bg-neutral-50 px-4 py-3 text-sm text-neutral-700"
                         >
-                          {ingredient}
+                          <div className="flex items-center justify-between gap-3">
+                            <span>{ingredient.name}</span>
+                            <span className="text-xs uppercase tracking-wide text-neutral-500">
+                              {ingredient.riskLevel}
+                            </span>
+                          </div>
+                          <details className="mt-2 rounded-xl bg-white p-3">
+                            <summary className="cursor-pointer font-medium text-neutral-700">
+                              More ingredient info
+                            </summary>
+                            <div className="mt-3 space-y-2 text-neutral-600">
+                              <p>
+                                <span className="font-medium text-neutral-800">Risk score:</span>{" "}
+                                {ingredient.riskScore}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Category:</span>{" "}
+                                {ingredient.category || "Unknown"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Source:</span>{" "}
+                                {ingredient.source || "Unknown"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Review bucket:</span>{" "}
+                                {ingredient.reviewBucket}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Aliases:</span>{" "}
+                                {ingredient.aliases.length
+                                  ? ingredient.aliases.join(", ")
+                                  : "None"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Concerns:</span>{" "}
+                                {ingredient.concerns.length
+                                  ? ingredient.concerns.join(", ")
+                                  : "None listed"}
+                              </p>
+                              <p>
+                                <span className="font-medium text-neutral-800">Description:</span>{" "}
+                                {ingredient.description || "No description available yet."}
+                              </p>
+                            </div>
+                          </details>
                         </li>
                       ))}
                     </ul>

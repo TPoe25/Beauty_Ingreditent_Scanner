@@ -43,6 +43,7 @@ model Product {
 model Ingredient {
   id           String             @id @default(uuid())
   name         String             @unique
+  normalizedName String?          @unique
   riskLevel    String
   riskScore    Int
   description  String?

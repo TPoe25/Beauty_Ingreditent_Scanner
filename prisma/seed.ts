@@ -7,6 +7,7 @@ import { PrismaPg } from "@prisma/adapter-pg";
 
 type SeedIngredient = {
   name: string;
+  normalizedName?: string | null;
   riskLevel: string;
   riskScore: number;
   description?: string | null;
@@ -27,7 +28,17 @@ const prisma = new PrismaClient({
   adapter: new PrismaPg({ connectionString }),
 });
 
-const DATA_PATH = path.join(process.cwd(), "data", "ingredients.generated.json");
+const DATA_PATH = path.join(process.cwd(), "data", "ingredients.final.json");
+
+function normalizeIngredientName(input: string) {
+  return input
+    .toLowerCase()
+    .trim()
+    .replace(/\(.*?\)/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
 function loadSeedData(): SeedIngredient[] {
   const fileContents = fs.readFileSync(DATA_PATH, "utf-8");
@@ -51,6 +62,10 @@ function loadSeedData(): SeedIngredient[] {
     })
     .map((item) => ({
       name: item.name.trim(),
+      normalizedName:
+        typeof item.normalizedName === "string" && item.normalizedName.trim().length > 0
+          ? normalizeIngredientName(item.normalizedName)
+          : normalizeIngredientName(item.name),
       riskLevel: item.riskLevel,
       riskScore: item.riskScore,
       description: item.description?.trim() || null,
@@ -77,28 +92,49 @@ function loadSeedData(): SeedIngredient[] {
 }
 
 async function seedIngredient(item: SeedIngredient) {
-  const ingredient = await prisma.ingredient.upsert({
-    where: { name: item.name },
-    update: {
-      riskLevel: item.riskLevel,
-      riskScore: item.riskScore,
-      description: item.description,
-      reviewBucket: item.reviewBucket,
-      category: item.category,
-      source: item.source,
-      concerns: item.concerns ?? undefined,
-    },
-    create: {
-      name: item.name,
-      riskLevel: item.riskLevel,
-      riskScore: item.riskScore,
-      description: item.description,
-      reviewBucket: item.reviewBucket,
-      category: item.category,
-      source: item.source,
-      concerns: item.concerns ?? undefined,
-    },
-  });
+  const existingIngredient =
+    (await prisma.ingredient.findFirst({
+      where: {
+        normalizedName: item.normalizedName!,
+      },
+    })) ??
+    (await prisma.ingredient.findFirst({
+      where: {
+        name: {
+          equals: item.name,
+          mode: "insensitive",
+        },
+      },
+    }));
+
+  const ingredient = existingIngredient
+    ? await prisma.ingredient.update({
+        where: { id: existingIngredient.id },
+        data: {
+          name: item.name,
+          normalizedName: item.normalizedName!,
+          riskLevel: item.riskLevel,
+          riskScore: item.riskScore,
+          description: item.description,
+          reviewBucket: item.reviewBucket,
+          category: item.category,
+          source: item.source,
+          concerns: item.concerns ?? undefined,
+        },
+      })
+    : await prisma.ingredient.create({
+        data: {
+          name: item.name,
+          normalizedName: item.normalizedName!,
+          riskLevel: item.riskLevel,
+          riskScore: item.riskScore,
+          description: item.description,
+          reviewBucket: item.reviewBucket,
+          category: item.category,
+          source: item.source,
+          concerns: item.concerns ?? undefined,
+        },
+      });
 
   for (const alias of new Set(item.aliases ?? [])) {
     await prisma.ingredientAlias.upsert({
@@ -146,42 +182,75 @@ async function seedStarterData() {
   const fragrance = await prisma.ingredient.upsert({
     where: { name: "Fragrance" },
     update: {
+      normalizedName: "fragrance",
       riskLevel: "moderate",
       riskScore: 25,
       description: "Common fragrance ingredient that may irritate sensitive skin.",
       reviewBucket: "moderate_context",
       category: "fragrance",
       concerns: ["allergen", "irritation"],
+      source: "MANUAL_CURATED",
     },
     create: {
       name: "Fragrance",
+      normalizedName: "fragrance",
       riskLevel: "moderate",
       riskScore: 25,
       description: "Common fragrance ingredient that may irritate sensitive skin.",
       reviewBucket: "moderate_context",
       category: "fragrance",
       concerns: ["allergen", "irritation"],
+      source: "MANUAL_CURATED",
     },
   });
 
   const glycerin = await prisma.ingredient.upsert({
     where: { name: "Glycerin" },
     update: {
+      normalizedName: "glycerin",
       riskLevel: "low",
       riskScore: 2,
       description: "Humectant used for hydration.",
       reviewBucket: "mvp_safe",
       category: "humectant",
       concerns: [],
+      source: "MANUAL_CURATED",
     },
     create: {
       name: "Glycerin",
+      normalizedName: "glycerin",
       riskLevel: "low",
       riskScore: 2,
       description: "Humectant used for hydration.",
       reviewBucket: "mvp_safe",
       category: "humectant",
       concerns: [],
+      source: "MANUAL_CURATED",
+    },
+  });
+
+  const water = await prisma.ingredient.upsert({
+    where: { name: "Water" },
+    update: {
+      normalizedName: "water",
+      riskLevel: "low",
+      riskScore: 0,
+      description: "Primary solvent in cosmetic formulations.",
+      reviewBucket: "mvp_safe",
+      category: "base",
+      concerns: [],
+      source: "MANUAL_CURATED",
+    },
+    create: {
+      name: "Water",
+      normalizedName: "water",
+      riskLevel: "low",
+      riskScore: 0,
+      description: "Primary solvent in cosmetic formulations.",
+      reviewBucket: "mvp_safe",
+      category: "base",
+      concerns: [],
+      source: "MANUAL_CURATED",
     },
   });
 
@@ -222,6 +291,20 @@ async function seedStarterData() {
     where: {
       productId_ingredientId: {
         productId: product.id,
+        ingredientId: water.id,
+      },
+    },
+    update: {},
+    create: {
+      productId: product.id,
+      ingredientId: water.id,
+    },
+  });
+
+  await prisma.productIngredient.upsert({
+    where: {
+      productId_ingredientId: {
+        productId: product.id,
         ingredientId: glycerin.id,
       },
     },
@@ -229,6 +312,26 @@ async function seedStarterData() {
     create: {
       productId: product.id,
       ingredientId: glycerin.id,
+    },
+  });
+
+  await prisma.ingredientAlias.upsert({
+    where: { alias: "Parfum" },
+    update: {
+      ingredientId: fragrance.id,
+    },
+    create: {
+      alias: "Parfum",
+      ingredientId: fragrance.id,
+    },
+  });
+
+  await prisma.ingredientAlias.upsert({
+    where: { alias: "Aqua" },
+    update: {},
+    create: {
+      alias: "Aqua",
+      ingredientId: water.id,
     },
   });
 }
