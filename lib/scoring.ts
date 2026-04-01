@@ -1,29 +1,34 @@
+export type IngredientResult = {
+  name: string;
+  riskLevel: string;
+  riskScore: number;
+};
+
 export type ProductScore = {
   score: number;
   color: "green" | "yellow" | "red";
+  breakdown: IngredientResult[];
 };
 
-type IngredientInput = {
-  riskLevel: string;
-  riskScore?: number | null;
-};
-
-export function calculateScore(ingredients: IngredientInput[]): ProductScore {
+export function calculateScore(
+  ingredients: IngredientResult[]
+): ProductScore {
   let score = 100;
 
-  for (const ingredient of ingredients) {
-    if (typeof ingredient.riskScore === "number") {
-      score -= ingredient.riskScore;
-      continue;
-    }
-
-    if (ingredient.riskLevel === "high") score -= 20;
-    if (ingredient.riskLevel === "moderate") score -= 10;
+  for (const ing of ingredients) {
+    score -= ing.riskScore;
   }
 
-  if (score < 0) score = 0;
+  score = Math.max(score, 0);
 
-  if (score >= 80) return { score, color: "green" };
-  if (score >= 50) return { score, color: "yellow" };
-  return { score, color: "red" };
+  let color: ProductScore["color"] = "green";
+
+  if (score < 50) color = "red";
+  else if (score < 80) color = "yellow";
+
+  return {
+    score,
+    color,
+    breakdown: ingredients,
+  };
 }

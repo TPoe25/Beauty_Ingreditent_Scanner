@@ -13,10 +13,48 @@ export async function GET(req: Request) {
 
     const products = await prisma.product.findMany({
       where: {
-        name: {
-          contains: q,
-          mode: "insensitive",
-        },
+        OR: [
+          {
+            name: {
+              contains: q,
+              mode: "insensitive",
+            },
+          },
+          {
+            brand: {
+              contains: q,
+              mode: "insensitive",
+            },
+          },
+          {
+            ingredients: {
+              some: {
+                ingredient: {
+                  name: {
+                    contains: q,
+                    mode: "insensitive",
+                  },
+                },
+              },
+            },
+          },
+          {
+            ingredients: {
+              some: {
+                ingredient: {
+                  aliases: {
+                    some: {
+                      alias: {
+                        contains: q,
+                        mode: "insensitive",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        ],
       },
       include: {
         ingredients: {
@@ -24,12 +62,31 @@ export async function GET(req: Request) {
         },
       },
       take: 20,
+      distinct: ["id"],
       orderBy: {
         name: "asc",
       },
     });
 
-    return Response.json(products);
+    return Response.json(
+      products.map((product) => ({
+        id: product.id,
+        name: product.name,
+        brand: product.brand,
+        category: product.category,
+        baseScore: product.baseScore,
+        scoreColor: product.scoreColor,
+        ingredientCount: product.ingredients.length,
+        flaggedIngredientCount: product.ingredients.filter(
+          (item) =>
+            item.ingredient.riskLevel === "high" ||
+            item.ingredient.riskLevel === "moderate"
+        ).length,
+        ingredientPreview: product.ingredients
+          .slice(0, 3)
+          .map((item) => item.ingredient.name),
+      }))
+    );
   } catch (error) {
     console.error("Product search failed", error);
     return Response.json({ error: "Unable to search products." }, { status: 500 });

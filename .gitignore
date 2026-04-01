@@ -11,4 +11,8 @@ node_modules
 /generated/prisma
 
 .venv
+.env*.local
+
+/keys/google-vision.json
+
 __pycache__

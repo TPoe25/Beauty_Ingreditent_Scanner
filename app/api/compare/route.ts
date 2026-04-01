@@ -3,6 +3,12 @@ import { calculateScore } from "@/lib/scoring";
 
 type IngredientLike = {
   name: string;
+  category: string | null;
+  source: string | null;
+  reviewBucket: string;
+  description: string | null;
+  concerns: unknown;
+  aliases: { alias: string }[];
   riskLevel: string;
   riskScore: number;
 };
@@ -13,7 +19,17 @@ function getFlaggedIngredients(ingredients: IngredientLike[]) {
       (ingredient) =>
         ingredient.riskLevel === "high" || ingredient.riskLevel === "moderate"
     )
-    .map((ingredient) => ingredient.name);
+    .map((ingredient) => ({
+      name: ingredient.name,
+      riskLevel: ingredient.riskLevel,
+      riskScore: ingredient.riskScore,
+      category: ingredient.category,
+      source: ingredient.source,
+      reviewBucket: ingredient.reviewBucket,
+      description: ingredient.description,
+      concerns: Array.isArray(ingredient.concerns) ? ingredient.concerns : [],
+      aliases: ingredient.aliases.map((alias) => alias.alias),
+    }));
 }
 
 export async function POST(req: Request) {
@@ -34,7 +50,11 @@ export async function POST(req: Request) {
         include: {
           ingredients: {
             include: {
-              ingredient: true,
+              ingredient: {
+                include: {
+                  aliases: true,
+                },
+              },
             },
           },
         },
@@ -44,7 +64,11 @@ export async function POST(req: Request) {
         include: {
           ingredients: {
             include: {
-              ingredient: true,
+              ingredient: {
+                include: {
+                  aliases: true,
+                },
+              },
             },
           },
         },

@@ -14,7 +14,11 @@ export async function GET(
       include: {
         ingredients: {
           include: {
-            ingredient: true,
+            ingredient: {
+              include: {
+                aliases: true,
+              },
+            },
           },
         },
       },
