@@ -1,0 +1,136 @@
+[
+  {
+    "name": "salicylic acid",
+    "normalizedName": "salicylic acid",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Acne vulgaris commonly affects adults, adolescents, and preadolescents aged 9 years or older. The objective of this study was to provide evidence-based recommendations for the management of acne. A work group conducted a systematic review and applied the Grading of Recommendations, Assessment, Development, and Evaluation approach for assessing the certainty of evidence and formulating and grading recommendations. This guideline presents 18 evidence-based recommendations and 5 good practice statements. Strong recommendations are made for benzoyl peroxide, topical retinoids, topical antibiotics, and oral doxycycline. Oral isotretinoin is strongly recommended for acne that is severe, causing psychosocial burden or scarring, or failing standard oral or topical therapy. Conditional recommendations are made for topical clascoterone, salicylic acid, and azelaic acid, as well as for oral minocyc",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "niacinamide",
+    "normalizedName": "niacinamide",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Niacinamide, an amide of vitamin B3 (niacin), is a hydrophilic endogenous substance. Its effects after epicutaneous application have long been described in the literature. Given a sufficient bioavailability, niacinamide has antipruritic, antimicrobial, vasoactive, photo-protective, sebostatic and lightening effects depending on its concentration. Within a complex metabolic system niacinamide controls the NFκB-mediated transcription of signalling molecules by inhibiting the nuclear poly (ADP-ribose) polymerase-1 (PARP-1). Niacinamide is a well-tolerated and safe substance often used in cosmetics. Clinical data for its therapeutic use in various dermatoses can increasingly be found in the literature. Although the existing data are not sufficient for a scientifically founded evaluation, it can be stated that the use of niacinamide in galenic preparations for epicutaneous application offers",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "zinc oxide",
+    "normalizedName": "zinc oxide",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Acne vulgaris is a chronic disease of the pilosebaceous units presenting as inflammatory or noninflammatory lesions in individuals of all ages. The current standard of treatment includes topical formulations in the forms of washes, gels, lotions, and creams such as antibiotics, antibacterial agents, retinoids, and comedolytics. Additionally, systemic treatments are available for more severe or resistant forms of acne. Nevertheless, these treatments have shown to induce a wide array of adverse effects, including dryness, peeling, erythema, and even fetal defects and embolic events. Zinc is a promising alternative to other acne treatments owing to its low cost, efficacy, and lack of systemic side effects. In this literature review, we evaluate the effectiveness and side-effect profiles of various formulations of zinc used to treat acne. Photoprotection has become integral in the prevention",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "dryness"
+    ]
+  },
+  {
+    "name": "titanium dioxide",
+    "normalizedName": "titanium dioxide",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "The second part of this CME article discusses sunscreen regulation and safety considerations for humans and the environment. First, we provide an overview of the history of the US Food and Drug Administration's regulation of sunscreen. Recent Food and Drug Administration studies clearly demonstrate that organic ultraviolet filters are systemically absorbed during routine sunscreen use, but to date there is no evidence of associated negative health effects. We also review the current evidence of sunscreen's association with vitamin D levels and frontal fibrosing alopecia, and recent concerns regarding benzene contamination. Finally, we review the possible environmental effects of ultraviolet filters, particularly coral bleaching. While climate change has been shown to be the primary driver of coral bleaching, laboratory-based studies suggest that organic ultraviolet filters represent an a",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "toxicity",
+      "inflammation"
+    ]
+  },
+  {
+    "name": "benzoyl peroxide",
+    "normalizedName": "benzoyl peroxide",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Acne vulgaris commonly affects adults, adolescents, and preadolescents aged 9 years or older. The objective of this study was to provide evidence-based recommendations for the management of acne. A work group conducted a systematic review and applied the Grading of Recommendations, Assessment, Development, and Evaluation approach for assessing the certainty of evidence and formulating and grading recommendations. This guideline presents 18 evidence-based recommendations and 5 good practice statements. Strong recommendations are made for benzoyl peroxide, topical retinoids, topical antibiotics, and oral doxycycline. Oral isotretinoin is strongly recommended for acne that is severe, causing psychosocial burden or scarring, or failing standard oral or topical therapy. Conditional recommendations are made for topical clascoterone, salicylic acid, and azelaic acid, as well as for oral minocyc",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "irritation"
+    ]
+  },
+  {
+    "name": "retinol",
+    "normalizedName": "retinol",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Bakuchiol is a phytochemical that has demonstrated cutaneous antiageing effects when applied topically. Early studies have suggested that bakuchiol is a functional analogue of topical retinoids, as both compounds have been shown to induce similar gene expression in the skin and lead to improvement of cutaneous photodamage. No in vivo studies have compared the two compounds for efficacy and side-effects. To compare the clinical efficacy and side-effect profiles of bakuchiol and retinol in improving common signs of cutaneous facial ageing. This was a randomized, double-blind, 12-week study in which 44 patients were asked to apply either bakuchiol 0·5% cream twice daily or retinol 0·5% cream daily. A facial photograph and analytical system was used to obtain and analyse high-resolution photographs of patients at 0, 4, 8 and 12 weeks. Patients also completed tolerability assessment questions",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "phenoxyethanol",
+    "normalizedName": "phenoxyethanol",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Phenoxyethanol, or 2-phenoxyethanol, has a large spectrum of antimicrobial activity and has been widely used as a preservative in cosmetic products for decades. It is effective against various Gram-negative and Gram-positive bacteria, as well as against yeasts, and has only a weak inhibitory effect on resident skin flora. According to the European Scientific Committee on Consumer Safety, phenoxyethanol is safe for all consumers - including children of all ages - when used as a preservative in cosmetic products at a maximum concentration of 1%. Adverse systemic effects have been observed in toxicological studies on animals but only when the levels of exposure were many magnitudes higher (around 200-fold higher) than those to which consumers are exposed when using phenoxyethanol-containing cosmetic products. Despite its widespread use in cosmetic products, phenoxyethanol is a rare sensitiz",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "allergy"
+    ]
+  },
+  {
+    "name": "fragrance",
+    "normalizedName": "fragrance",
+    "riskLevel": "moderate",
+    "riskScore": 15,
+    "description": "Fragrance is an integral part of cosmetic products and is often regarded as an overriding factor in the selection of cosmetics among consumers. Fragrances also play a considerable role in masking undesirable smells arising from fatty acids, oils and surfactants that are commonly used in cosmetic formulations. Essential oils are vital assets in the cosmetic industry, as along with imparting pleasant aromas in different products, they are able to act as preservatives and active agents and, simultaneously, offer various benefits to the skin. Moreover, the stimulating demand for natural ingredients has contributed massively to a renewed interest in cosmetic and wellness industries in plant derivatives, especially essential oils. This has led popular cosmetic companies to endorse natural fragrances and opt for minimally processed natural ingredients, given the potentially adverse health risks",
+    "reviewBucket": "moderate_context",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "contact dermatitis",
+      "allergy"
+    ]
+  },
+  {
+    "name": "hyaluronic acid",
+    "normalizedName": "hyaluronic acid",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Skin aging goes beyond a chronological process and also results from extrinsic factors referred to as the exposome. Hyaluronic acid (HA) is an important component of the extracellular matrix, with loss starting at 25 years old. While many studies of HA concern topical use, few literature reviews only address the use of topical HA in dermatology. This review describes the different characteristics of HA-containing cosmeceuticals, with a focus on skin aging and the impact of exposome factors on HA synthesis and degradation. A review was performed using the terms HA, hyaluronan, topical, dermatology, cosmetic, aging treatment, exposome, and cosmeceuticals. Results are also presented from a recent randomized controlled trial (RCT), which investigated the additional benefit of using a HA epidermic filler (HA-filler serum) combined with Botulinum toxin type A (BoNTA) to treat signs of skin agi",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "inflammation"
+    ]
+  },
+  {
+    "name": "glycerin",
+    "normalizedName": "glycerin",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Glycerol is a trihydroxy alcohol that has been included for many years in topical dermatological preparations. In addition, endogenous glycerol plays a role in skin hydration, cutaneous elasticity and epidermal barrier repair. The aquaporin-3 transport channel and lipid metabolism in the pilosebaceous unit have been evidenced as potential pathways for endogenous delivery of glycerol and for its metabolism in the skin. Multiple effects of glycerol on the skin have been reported. The diverse actions of the polyol glycerol on the epidermis include improvement of stratum corneum hydration, skin barrier function and skin mechanical properties, inhibition of the stratum corneum lipid phase transition, protection against irritating stimuli, enhancement of desmosomal degradation, and acceleration of wound-healing processes. Even an antimicrobial effect has been demonstrated. Topical application",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  }
+]

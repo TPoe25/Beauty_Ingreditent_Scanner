@@ -18,7 +18,11 @@
     "db:migrate:deploy": "prisma migrate deploy",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
-    "db:seed": "node --import tsx prisma/seed.ts"
+    "db:seed": "node --import tsx prisma/seed.ts",
+    "data:fda": "python3 -m services.fda_service --queries-file data/source_queries.txt --output data/fda.ingredients.json",
+    "data:lit": "python3 -m services.literature_service --queries-file data/source_queries.txt --output data/literature.ingredients.json",
+    "data:merge": "python3 -m core.filter_engine --base data/ingredients.final.json --extra data/fda.ingredients.json data/literature.ingredients.json --out data/ingredients.final.json",
+    "data:refresh": "npm run data:fda && npm run data:lit && npm run data:merge"
   },
   "dependencies": {
     "@google-cloud/vision": "^5.3.5",
