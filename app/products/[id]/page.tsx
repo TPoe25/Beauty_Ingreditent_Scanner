@@ -43,51 +43,58 @@ export default async function ProductPage({
       </div>
 
       <h3 className="mb-2 font-semibold">Ingredients</h3>
-      <ul className="space-y-2">
-        {product.ingredients.map((item) => (
-          <li key={item.ingredient.id} className="border-b pb-3">
-            <div className="flex justify-between gap-4 pb-1">
-              <span>{item.ingredient.name}</span>
-              <span className="text-sm text-gray-500">{item.ingredient.riskLevel}</span>
-            </div>
-            <details className="mt-2 rounded bg-gray-50 p-3 text-sm">
-              <summary className="cursor-pointer font-medium text-gray-700">
-                More ingredient info
-              </summary>
-              <div className="mt-3 space-y-2 text-gray-600">
-                <p>
-                  <span className="font-medium text-gray-800">Category:</span>{" "}
-                  {item.ingredient.category || "Unknown"}
-                </p>
-                <p>
-                  <span className="font-medium text-gray-800">Source:</span>{" "}
-                  {item.ingredient.source || "Unknown"}
-                </p>
-                <p>
-                  <span className="font-medium text-gray-800">Review bucket:</span>{" "}
-                  {item.ingredient.reviewBucket}
-                </p>
-                <p>
-                  <span className="font-medium text-gray-800">Aliases:</span>{" "}
-                  {item.ingredient.aliases.length
-                    ? item.ingredient.aliases.map((alias) => alias.alias).join(", ")
-                    : "None"}
-                </p>
-                <p>
-                  <span className="font-medium text-gray-800">Concerns:</span>{" "}
-                  {Array.isArray(item.ingredient.concerns) && item.ingredient.concerns.length
-                    ? item.ingredient.concerns.join(", ")
-                    : "None listed"}
-                </p>
-                <p>
-                  <span className="font-medium text-gray-800">Description:</span>{" "}
-                  {item.ingredient.description || "No description available yet."}
-                </p>
+      {product.ingredients.length === 0 ? (
+        <div className="rounded bg-gray-50 p-4 text-sm text-gray-600">
+          No ingredient list was available from the imported dataset for this product yet, so it
+          can be shown in the app but cannot be scored in detail.
+        </div>
+      ) : (
+        <ul className="space-y-2">
+          {product.ingredients.map((item) => (
+            <li key={item.ingredient.id} className="border-b pb-3">
+              <div className="flex justify-between gap-4 pb-1">
+                <span>{item.ingredient.name}</span>
+                <span className="text-sm text-gray-500">{item.ingredient.riskLevel}</span>
               </div>
-            </details>
-          </li>
-        ))}
-      </ul>
+              <details className="mt-2 rounded bg-gray-50 p-3 text-sm">
+                <summary className="cursor-pointer font-medium text-gray-700">
+                  More ingredient info
+                </summary>
+                <div className="mt-3 space-y-2 text-gray-600">
+                  <p>
+                    <span className="font-medium text-gray-800">Category:</span>{" "}
+                    {item.ingredient.category || "Unknown"}
+                  </p>
+                  <p>
+                    <span className="font-medium text-gray-800">Source:</span>{" "}
+                    {item.ingredient.source || "Unknown"}
+                  </p>
+                  <p>
+                    <span className="font-medium text-gray-800">Review bucket:</span>{" "}
+                    {item.ingredient.reviewBucket}
+                  </p>
+                  <p>
+                    <span className="font-medium text-gray-800">Aliases:</span>{" "}
+                    {item.ingredient.aliases.length
+                      ? item.ingredient.aliases.map((alias) => alias.alias).join(", ")
+                      : "None"}
+                  </p>
+                  <p>
+                    <span className="font-medium text-gray-800">Concerns:</span>{" "}
+                    {Array.isArray(item.ingredient.concerns) && item.ingredient.concerns.length
+                      ? item.ingredient.concerns.join(", ")
+                      : "None listed"}
+                  </p>
+                  <p>
+                    <span className="font-medium text-gray-800">Description:</span>{" "}
+                    {item.ingredient.description || "No description available yet."}
+                  </p>
+                </div>
+              </details>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

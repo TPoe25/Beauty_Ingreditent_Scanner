@@ -10,11 +10,15 @@
     "postinstall": "prisma generate",
     "start": "next start",
     "lint": "eslint app lib prisma --ext .ts,.tsx",
+    "data:excel": "tsx scripts/transform-excel.ts",
+    "data:excel:all": "tsx scripts/transform-excel.ts data/raw data",
+    "data:cosing": "tsx scripts/transform-cosing.ts",
     "db:migrate": "prisma migrate dev",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
-    "db:seed": "node --import tsx prisma/seed.ts"
+    "db:seed": "node --import tsx prisma/seed.ts",
+    "db:enrich:pubchem": "node --import tsx prisma/enrich-pubchem.ts"
   },
   "dependencies": {
     "@google-cloud/vision": "^5.3.5",
@@ -27,6 +31,7 @@
     "pg": "^8.20.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "xlsx": "^0.18.5",
     "zod": "4.3.6"
   },
   "devDependencies": {

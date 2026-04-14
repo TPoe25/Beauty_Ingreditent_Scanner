@@ -90,6 +90,8 @@ Copy [`.env.example`](/Users/taylorpoe/Projects/Beauty_Ingreditent_Scanner/.env.
 - `DATABASE_URL`
 - `AUTH_SECRET`
 - `OPENAI_API_KEY`
+- `PUBCHEM_SERVICE_URL` (optional, for ingredient enrichment during seeding)
+- `SEED_ENABLE_PUBCHEM` (optional, defaults to `false`)
 
 ## Local Development
 
@@ -105,6 +107,13 @@ npm run dev
 npm run db:migrate
 npm run db:migrate:deploy
 npm run db:seed
+```
+
+Optional PubChem enrichment:
+
+```bash
+uvicorn pubchem_service:app --host 127.0.0.1 --port 8000
+npm run db:enrich:pubchem
 ```
 
 ## Production Build
