@@ -5,6 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
+import { Prisma } from "@prisma/client";
 import { calculateScore } from "../lib/scoring";
 import { extractIngredientCandidates } from "../lib/parseIngredients";
 
@@ -621,18 +622,69 @@ async function findOrCreateIngredient(
     .slice(0, 15);
   const description = truncateText(pubChemResult?.toxicity_text, 1200);
 
-  const created = await prisma.ingredient.create({
-    data: {
-      name: rawName,
-      normalizedName: normalized,
-      riskLevel: "unknown",
-      riskScore: 5,
-      reviewBucket: "unknown_review_needed",
-      source: pubChemResult ? "PRODUCT_DATASET_IMPORT+PUBCHEM" : "PRODUCT_DATASET_IMPORT",
-      description,
-      concerns: [],
-    },
-  });
+  let created;
+
+  try {
+    created = await prisma.ingredient.create({
+      data: {
+        name: rawName,
+        normalizedName: normalized,
+        riskLevel: "unknown",
+        riskScore: 5,
+        reviewBucket: "unknown_review_needed",
+        source: pubChemResult ? "PRODUCT_DATASET_IMPORT+PUBCHEM" : "PRODUCT_DATASET_IMPORT",
+        description,
+        concerns: [],
+      },
+    });
+  } catch (error) {
+    if (
+      error instanceof Prisma.PrismaClientKnownRequestError &&
+      error.code === "P2002"
+    ) {
+      const existing = await prisma.ingredient.findFirst({
+        where: {
+          OR: [
+            { normalizedName: normalized },
+            {
+              name: {
+                equals: rawName,
+                mode: "insensitive",
+              },
+            },
+          ],
+        },
+        include: {
+          aliases: true,
+        },
+      });
+
+      if (existing) {
+        const recovered: IngredientRecord = {
+          id: existing.id,
+          name: existing.name,
+          normalizedName: existing.normalizedName,
+          riskLevel: existing.riskLevel,
+          riskScore: existing.riskScore,
+          source: existing.source,
+          aliases: existing.aliases.map((alias) => alias.alias),
+        };
+
+        if (existing.normalizedName) {
+          lookup.byNormalized.set(existing.normalizedName, recovered);
+        }
+        lookup.byName.set(existing.name.toLowerCase(), recovered);
+        for (const alias of recovered.aliases) {
+          lookup.byAlias.set(alias.toLowerCase(), recovered);
+          lookup.byAlias.set(normalizeIngredientName(alias), recovered);
+        }
+
+        return recovered;
+      }
+    }
+
+    throw error;
+  }
 
   for (const alias of aliases) {
     await prisma.ingredientAlias.upsert({
