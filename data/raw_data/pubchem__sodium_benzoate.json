@@ -1,0 +1,19 @@
+{
+  "fetchedAt": "2026-04-06T16:00:21.453Z",
+  "source": "pubchem",
+  "kind": "api",
+  "name": "sodium_benzoate",
+  "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/sodium%20benzoate/property/Title,MolecularFormula,CanonicalSMILES/JSON",
+  "data": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 517055,
+          "MolecularFormula": "C7H5NaO2",
+          "ConnectivitySMILES": "C1=CC=C(C=C1)C(=O)[O-].[Na+]",
+          "Title": "Sodium Benzoate"
+        }
+      ]
+    }
+  }
+}

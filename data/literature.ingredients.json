@@ -1,0 +1,185 @@
+[
+  {
+    "name": "benzoyl peroxide",
+    "normalizedName": "benzoyl peroxide",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Acne vulgaris commonly affects adults, adolescents, and preadolescents aged 9 years or older. The objective of this study was to provide evidence-based recommendations for the management of acne. A work group conducted a systematic review and applied the Grading of Recommendations, Assessment, Development, and Evaluation approach for assessing the certainty of evidence and formulating and grading recommendations. This guideline presents 18 evidence-based recommendations and 5 good practice statements. Strong recommendations are made for benzoyl peroxide, topical retinoids, topical antibiotics, and oral doxycycline. Oral isotretinoin is strongly recommended for acne that is severe, causing psychosocial burden or scarring, or failing standard oral or topical therapy. Conditional recommendations are made for topical clascoterone, salicylic acid, and azelaic acid, as well as for oral minocyc",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "irritation"
+    ]
+  },
+  {
+    "name": "Cetearyl Alcohol",
+    "normalizedName": "cetearyl alcohol",
+    "riskLevel": "moderate",
+    "riskScore": 15,
+    "description": "The effects of different emulsifiers on the in vitro permeation through human skin of two sunscreen agents [octylmethoxycinnamate (OMC) and butylmethoxydibenzoylmethane (BMBM)] were investigated from O/W emulsions. The test formulations were prepared using the same oil and aqueous phase ingredients and the following emulsifier and coemulsifier systems: Emulgade SE((R)) (ceteareth-12 and ceteareth-20 and cetearyl alcohol and cetyl palmitate) and glycerylmonostearate (emulsion 1); Brij 72((R)) (steareth-2), Brij 721((R)) (steareth-21) and cetearyl alcohol (emulsion 2); Phytocream((R)) (potassium palmitoyl-hydrolysed wheat protein and glyceryl stearate and cetearyl alcohol) and glycerylmonostearate (emulsion 3); Montanov 68((R)) (cetearyl glucoside and cetearyl alcohol) (emulsion 4); Xalifin-15((R)) (C(15-20) acid PEG-8 ester) and cetearyl alcohol (emulsion 5). The cumulative amount of OMC",
+    "reviewBucket": "moderate_context",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "contact dermatitis",
+      "allergy"
+    ]
+  },
+  {
+    "name": "Citric Acid",
+    "normalizedName": "citric acid",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Microbial citric acid has high economic importance and widely used in beverage, food, detergents, cosmetics and pharmaceutical industries. The filamentous fungus Aspergillus niger is a work horse and important cell factory in industry for the production of citric acid. Although in-depth literatures and reviews have been published to explain the biochemistry, biotechnology and genetic engineering study of citric acid production by Aspergillus niger separately but the present review compiled, all the aspects with upto date brief summary of the subject describing microorganisms, substrates and their pre-treatment, screening, fermentation techniques, metabolic engineering, biochemistry, product recovery and numerous biotechnological application of citric acid for simple understanding of microbial citric acid production. The availability of genome sequence of this organism has facilitated num",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "Dimethicone",
+    "normalizedName": "dimethicone",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Since the 1940s, methylchlorosilanes have been used to treat glassware to prevent blood from clotting. The use of silicones in pharmaceutical and medical applications has grown to where today they are used in many life-saving devices (pacemakers, hydrocephalic shunts) and pharmaceutical applications from tubing, to excipients in topical formulations, to adhesives to affix transdermal drug delivery systems, and are also being used in products as active pharmaceutical ingredients, such as antiflatulents. About 60% of today's skin-care products now contain some type of silicone where they are considered safe and are known to provide a pleasant \"silky-touch,\" non-greasy, and non-staining feel. Silicones exhibit many useful characteristics, and the safety of these agents supports their numerous applications; their biocompatibility is partially due to their low-chemical reactivity displayed by",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "irritation",
+      "toxicity"
+    ]
+  },
+  {
+    "name": "Fragrance",
+    "normalizedName": "fragrance",
+    "riskLevel": "moderate",
+    "riskScore": 15,
+    "description": "Fragrance is an integral part of cosmetic products and is often regarded as an overriding factor in the selection of cosmetics among consumers. Fragrances also play a considerable role in masking undesirable smells arising from fatty acids, oils and surfactants that are commonly used in cosmetic formulations. Essential oils are vital assets in the cosmetic industry, as along with imparting pleasant aromas in different products, they are able to act as preservatives and active agents and, simultaneously, offer various benefits to the skin. Moreover, the stimulating demand for natural ingredients has contributed massively to a renewed interest in cosmetic and wellness industries in plant derivatives, especially essential oils. This has led popular cosmetic companies to endorse natural fragrances and opt for minimally processed natural ingredients, given the potentially adverse health risks",
+    "reviewBucket": "moderate_context",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "contact dermatitis",
+      "allergy"
+    ]
+  },
+  {
+    "name": "Glycerin",
+    "normalizedName": "glycerin",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Glycerol is a trihydroxy alcohol that has been included for many years in topical dermatological preparations. In addition, endogenous glycerol plays a role in skin hydration, cutaneous elasticity and epidermal barrier repair. The aquaporin-3 transport channel and lipid metabolism in the pilosebaceous unit have been evidenced as potential pathways for endogenous delivery of glycerol and for its metabolism in the skin. Multiple effects of glycerol on the skin have been reported. The diverse actions of the polyol glycerol on the epidermis include improvement of stratum corneum hydration, skin barrier function and skin mechanical properties, inhibition of the stratum corneum lipid phase transition, protection against irritating stimuli, enhancement of desmosomal degradation, and acceleration of wound-healing processes. Even an antimicrobial effect has been demonstrated. Topical application",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "Hyaluronic Acid",
+    "normalizedName": "hyaluronic acid",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Skin aging goes beyond a chronological process and also results from extrinsic factors referred to as the exposome. Hyaluronic acid (HA) is an important component of the extracellular matrix, with loss starting at 25 years old. While many studies of HA concern topical use, few literature reviews only address the use of topical HA in dermatology. This review describes the different characteristics of HA-containing cosmeceuticals, with a focus on skin aging and the impact of exposome factors on HA synthesis and degradation. A review was performed using the terms HA, hyaluronan, topical, dermatology, cosmetic, aging treatment, exposome, and cosmeceuticals. Results are also presented from a recent randomized controlled trial (RCT), which investigated the additional benefit of using a HA epidermic filler (HA-filler serum) combined with Botulinum toxin type A (BoNTA) to treat signs of skin agi",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "inflammation"
+    ]
+  },
+  {
+    "name": "Lactic Acid",
+    "normalizedName": "lactic acid",
+    "riskLevel": "moderate",
+    "riskScore": 15,
+    "description": "AHAs are organic acids with one hydroxyl group attached to the alpha position of the acid. AHAs including glycolic acid, lactic acid, malic acid, tartaric acid, and citric acid are often used extensively in cosmetic formulations. AHAs have been used as superficial peeling agents as well as to ameliorate the appearance of keratoses and acne in dermatology. However, caution should be exercised in relation to certain adverse reactions among patients using products with AHAs, including swelling, burning, and pruritus. Whether AHAs enhance or decrease photo damage of the skin remains unclear, compelling us to ask the question, is AHA a friend or a foe of the skin? The aim of this manuscript is to review the various biological effects and mechanisms of AHAs on human keratinocytes and in an animal model. We conclude that whether AHA is a friend or foe of human skin depends on its concentration.",
+    "reviewBucket": "moderate_context",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "Niacinamide",
+    "normalizedName": "niacinamide",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Niacinamide, an amide of vitamin B3 (niacin), is a hydrophilic endogenous substance. Its effects after epicutaneous application have long been described in the literature. Given a sufficient bioavailability, niacinamide has antipruritic, antimicrobial, vasoactive, photo-protective, sebostatic and lightening effects depending on its concentration. Within a complex metabolic system niacinamide controls the NFκB-mediated transcription of signalling molecules by inhibiting the nuclear poly (ADP-ribose) polymerase-1 (PARP-1). Niacinamide is a well-tolerated and safe substance often used in cosmetics. Clinical data for its therapeutic use in various dermatoses can increasingly be found in the literature. Although the existing data are not sufficient for a scientifically founded evaluation, it can be stated that the use of niacinamide in galenic preparations for epicutaneous application offers",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "Nicotinamide",
+    "normalizedName": "nicotinamide",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Niacinamide, an amide of vitamin B3 (niacin), is a hydrophilic endogenous substance. Its effects after epicutaneous application have long been described in the literature. Given a sufficient bioavailability, niacinamide has antipruritic, antimicrobial, vasoactive, photo-protective, sebostatic and lightening effects depending on its concentration. Within a complex metabolic system niacinamide controls the NFκB-mediated transcription of signalling molecules by inhibiting the nuclear poly (ADP-ribose) polymerase-1 (PARP-1). Niacinamide is a well-tolerated and safe substance often used in cosmetics. Clinical data for its therapeutic use in various dermatoses can increasingly be found in the literature. Although the existing data are not sufficient for a scientifically founded evaluation, it can be stated that the use of niacinamide in galenic preparations for epicutaneous application offers",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "Phenoxyethanol",
+    "normalizedName": "phenoxyethanol",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Phenoxyethanol, or 2-phenoxyethanol, has a large spectrum of antimicrobial activity and has been widely used as a preservative in cosmetic products for decades. It is effective against various Gram-negative and Gram-positive bacteria, as well as against yeasts, and has only a weak inhibitory effect on resident skin flora. According to the European Scientific Committee on Consumer Safety, phenoxyethanol is safe for all consumers - including children of all ages - when used as a preservative in cosmetic products at a maximum concentration of 1%. Adverse systemic effects have been observed in toxicological studies on animals but only when the levels of exposure were many magnitudes higher (around 200-fold higher) than those to which consumers are exposed when using phenoxyethanol-containing cosmetic products. Despite its widespread use in cosmetic products, phenoxyethanol is a rare sensitiz",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": [
+      "allergy"
+    ]
+  },
+  {
+    "name": "Retinol",
+    "normalizedName": "retinol",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Bakuchiol is a phytochemical that has demonstrated cutaneous antiageing effects when applied topically. Early studies have suggested that bakuchiol is a functional analogue of topical retinoids, as both compounds have been shown to induce similar gene expression in the skin and lead to improvement of cutaneous photodamage. No in vivo studies have compared the two compounds for efficacy and side-effects. To compare the clinical efficacy and side-effect profiles of bakuchiol and retinol in improving common signs of cutaneous facial ageing. This was a randomized, double-blind, 12-week study in which 44 patients were asked to apply either bakuchiol 0·5% cream twice daily or retinol 0·5% cream daily. A facial photograph and analytical system was used to obtain and analyse high-resolution photographs of patients at 0, 4, 8 and 12 weeks. Patients also completed tolerability assessment questions",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "Salicylic Acid",
+    "normalizedName": "salicylic acid",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Acne vulgaris commonly affects adults, adolescents, and preadolescents aged 9 years or older. The objective of this study was to provide evidence-based recommendations for the management of acne. A work group conducted a systematic review and applied the Grading of Recommendations, Assessment, Development, and Evaluation approach for assessing the certainty of evidence and formulating and grading recommendations. This guideline presents 18 evidence-based recommendations and 5 good practice statements. Strong recommendations are made for benzoyl peroxide, topical retinoids, topical antibiotics, and oral doxycycline. Oral isotretinoin is strongly recommended for acne that is severe, causing psychosocial burden or scarring, or failing standard oral or topical therapy. Conditional recommendations are made for topical clascoterone, salicylic acid, and azelaic acid, as well as for oral minocyc",
+    "reviewBucket": "high_review_needed",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  },
+  {
+    "name": "Sodium Benzoate",
+    "normalizedName": "sodium benzoate",
+    "riskLevel": "low",
+    "riskScore": 3,
+    "description": "Background: Scabies is a prevalent dermatological condition with significant public health implications. The recent rise in drug-resistant scabies presents new challenges for effective disease management and control. Methods: A comprehensive literature review was conducted using PubMed, Cochrane Library, and Web of Science. Studies published from 2000 to August 2024 were considered, focusing on those reporting drug-resistant scabies and advancements in treatment approaches. Results: Clinical studies, in vitro investigations, and case reports show significant resistance of human scabies to permethrin. Main resistance mechanisms involve genetic mutations in the mites' voltage-gated sodium channels (VGSCs) and enhanced activity or expression of the detoxifying enzyme glutathione S-transferase (GST). Resistance to ivermectin and benzyle benzoate, although suggested by some authors, seems les",
+    "reviewBucket": "mvp_safe",
+    "category": "literature",
+    "source": "PUBMED_LITERATURE",
+    "aliases": [],
+    "concerns": []
+  }
+]

@@ -1,3 +1,4 @@
+import ChatBox from "./components/ChatBox";
 import "./globals.css";
 import Link from "next/link";
 import AuthNav from "./components/AuthNav";
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen bg-neutral-50 text-neutral-900 antialiased">
         <div className="flex min-h-screen flex-col">
+          {/* Header */}
           <header className="border-b border-neutral-200/80 bg-white/90 backdrop-blur-sm">
             <div className="relative z-20 mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
               <Link href="/" className="flex items-center gap-3">
@@ -23,7 +25,9 @@ export default function RootLayout({
                   InciSight
                 </div>
                 <div className="hidden sm:block">
-                  <p className="text-sm font-semibold text-neutral-900">Ingredient Intelligence</p>
+                  <p className="text-sm font-semibold text-neutral-900">
+                    Ingredient Intelligence
+                  </p>
                   <p className="text-xs text-neutral-500">
                     Personalized scanning and explanation
                   </p>
@@ -32,7 +36,11 @@ export default function RootLayout({
               <AuthNav />
             </div>
           </header>
-          <div className="flex-1">{children}</div>
+
+          {/* Main Content */}
+          <main className="flex-1">{children}</main>
+
+          {/* Footer */}
           <footer className="border-t border-neutral-200/80 bg-white/90 px-6 py-5 backdrop-blur-sm">
             <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 text-center">
               <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400">
@@ -44,6 +52,9 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+
+        {/* ChatBox (global overlay, always on top) */}
+        <ChatBox />
       </body>
     </html>
   );

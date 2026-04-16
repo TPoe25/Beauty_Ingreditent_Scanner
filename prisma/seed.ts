@@ -902,50 +902,72 @@ async function seedStarterData() {
   const ingredientMap = new Map<string, { id: string; name: string }>();
 
   for (const starterIngredient of starterIngredients) {
-    const ingredient = await prisma.ingredient.upsert({
-      where: { name: starterIngredient.name },
-      update: {
-        normalizedName: starterIngredient.normalizedName,
-        riskLevel: starterIngredient.riskLevel,
-        riskScore: starterIngredient.riskScore,
-        description: starterIngredient.description,
-        reviewBucket: starterIngredient.reviewBucket,
-        category: starterIngredient.category,
-        concerns: starterIngredient.concerns,
-        source: starterIngredient.source,
-      },
-      create: {
-        name: starterIngredient.name,
-        normalizedName: starterIngredient.normalizedName,
-        riskLevel: starterIngredient.riskLevel,
-        riskScore: starterIngredient.riskScore,
-        description: starterIngredient.description,
-        reviewBucket: starterIngredient.reviewBucket,
-        category: starterIngredient.category,
-        concerns: starterIngredient.concerns,
-        source: starterIngredient.source,
-      },
-    });
+  const normalizedName = normalizeIngredientName(
+    starterIngredient.normalizedName ?? starterIngredient.name
+  );
 
-    ingredientMap.set(starterIngredient.name, {
-      id: ingredient.id,
-      name: ingredient.name,
-    });
-
-    for (const alias of starterIngredient.aliases) {
-      await prisma.ingredientAlias.upsert({
-        where: { alias },
-        update: {
-          ingredientId: ingredient.id,
+  const existingIngredient =
+    (await prisma.ingredient.findFirst({
+      where: {
+        normalizedName,
+      },
+    })) ??
+    (await prisma.ingredient.findFirst({
+      where: {
+        name: {
+          equals: starterIngredient.name,
+          mode: "insensitive",
         },
-        create: {
-          alias,
-          ingredientId: ingredient.id,
+      },
+    }));
+
+  const ingredient = existingIngredient
+    ? await prisma.ingredient.update({
+        where: { id: existingIngredient.id },
+        data: {
+          name: starterIngredient.name,
+          normalizedName,
+          riskLevel: starterIngredient.riskLevel,
+          riskScore: starterIngredient.riskScore,
+          description: starterIngredient.description,
+          reviewBucket: starterIngredient.reviewBucket,
+          category: starterIngredient.category,
+          concerns: starterIngredient.concerns,
+          source: starterIngredient.source,
+        },
+      })
+    : await prisma.ingredient.create({
+        data: {
+          name: starterIngredient.name,
+          normalizedName,
+          riskLevel: starterIngredient.riskLevel,
+          riskScore: starterIngredient.riskScore,
+          description: starterIngredient.description,
+          reviewBucket: starterIngredient.reviewBucket,
+          category: starterIngredient.category,
+          concerns: starterIngredient.concerns,
+          source: starterIngredient.source,
         },
       });
-    }
-  }
 
+  ingredientMap.set(starterIngredient.name, {
+    id: ingredient.id,
+    name: ingredient.name,
+  });
+
+  for (const alias of starterIngredient.aliases) {
+    await prisma.ingredientAlias.upsert({
+      where: { alias },
+      update: {
+        ingredientId: ingredient.id,
+      },
+      create: {
+        alias,
+        ingredientId: ingredient.id,
+      },
+    });
+  }
+}
   const starterProducts = [
     {
       name: "Hydrating Face Wash",

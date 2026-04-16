@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Nicotinamide",
+    "normalizedName": "nicotinamide",
+    "source": "PUBCHEM",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/niacinamide/property/Title,MolecularFormula,CanonicalSMILES/JSON",
+    "aliases": [],
+    "molecularFormula": "C6H6N2O",
+    "smiles": "",
+    "riskLevel": "unknown",
+    "riskScore": 0,
+    "reviewBucket": "needs_review"
+  },
+  {
+    "name": "Phenoxyethanol",
+    "normalizedName": "phenoxyethanol",
+    "source": "PUBCHEM",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/phenoxyethanol/property/Title,MolecularFormula,CanonicalSMILES/JSON",
+    "aliases": [],
+    "molecularFormula": "C8H10O2",
+    "smiles": "",
+    "riskLevel": "moderate",
+    "riskScore": 20,
+    "reviewBucket": "moderate_review_needed"
+  },
+  {
+    "name": "Sodium Benzoate",
+    "normalizedName": "sodium benzoate",
+    "source": "PUBCHEM",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/sodium%20benzoate/property/Title,MolecularFormula,CanonicalSMILES/JSON",
+    "aliases": [],
+    "molecularFormula": "C7H5NaO2",
+    "smiles": "",
+    "riskLevel": "unknown",
+    "riskScore": 0,
+    "reviewBucket": "needs_review"
+  }
+]

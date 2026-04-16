@@ -5,6 +5,10 @@
     "node": ">=20.0.0"
   },
   "scripts": {
+    "fetch:data": "node scripts/fetch-free-data.js",
+    "filter:data": "node scripts/filter-free-data.js",
+    "build:data": "npm run fetch:data && npm run filter:data",
+    "import:data": "node scripts/import-filtered-data.js",
     "dev": "next dev",
     "build": "prisma generate && next build",
     "postinstall": "prisma generate",
@@ -18,11 +22,15 @@
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
     "db:seed": "node --import tsx prisma/seed.ts",
+    "data:fda": "python3 -m services.fda_service --queries-file data/source_queries.txt --output data/fda.ingredients.json",
+    "data:lit": "python3 -m services.literature_service --queries-file data/source_queries.txt --output data/literature.ingredients.json",
+    "data:merge": "python3 -m core.filter_engine --base data/ingredients.final.json --extra data/fda.ingredients.json data/literature.ingredients.json --out data/ingredients.final.json",
+    "data:refresh": "npm run data:fda && npm run data:lit && npm run data:merge",
     "db:enrich:pubchem": "node --import tsx prisma/enrich-pubchem.ts"
   },
   "dependencies": {
     "@google-cloud/vision": "^5.3.5",
-    "@prisma/adapter-pg": "^7.5.0",
+    "@prisma/adapter-pg": "^7.6.0",
     "@prisma/client": "^7.5.0",
     "bcryptjs": "3.0.3",
     "next": "16.2.1",
@@ -39,7 +47,7 @@
     "@types/node": "24.5.2",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
-    "dotenv": "^17.3.1",
+    "dotenv": "^17.4.1",
     "eslint": "9.37.0",
     "eslint-config-next": "16.2.1",
     "postcss": "^8.5.8",
