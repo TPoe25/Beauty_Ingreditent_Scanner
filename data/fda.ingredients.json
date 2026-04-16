@@ -1,101 +1,5 @@
 [
   {
-    "name": "salicylic acid",
-    "normalizedName": "salicylic acid",
-    "riskLevel": "high",
-    "riskScore": 40,
-    "description": "Uses: For the management of acne helps clear up acne blemishes, black heads, helps prevent the development of new acne pimples penetrates pores to reduce the number of acne pimples, white heads and black heads help keep skin clear of new acne pimples, white heads and black heads helps prevent new acne pimples, white heads and black heads from forming help prevent the development of new pimples, white heads and black heads Directions: Acne Clearing Cleanser Acne Clearing Tonic Acne Clearing Treatment 101 Purpose Acne medication",
-    "reviewBucket": "high_review_needed",
-    "category": "regulatory",
-    "source": "OPENFDA_DRUG_LABEL",
-    "aliases": [
-      "PETROLATUM AND LANOLIN",
-      "LANOLIN",
-      "PETROLATUM"
-    ],
-    "concerns": [
-      "Warnings: For external use only. Do not use if you have sensitive skin and/or are sensitive to [active ingredient] When using this product skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time avoid unnecessary sun exposure and use sun screen, Acne Clearing Moisture with SPF 45 skin irritation may occur, characterized by redness, burning, itching, peeling, and possibly swelling. Irritation may be reduced by using the product less frequently or in a lower concentration Stop use and ask a doctor if irritation becomes severe",
-      "Warnings For external use only",
-      "ADVERSE REACTION Information: 1-888-287-1915 or Walmart.com/help DISTRIBUTED BY: Walmart Inc., Bentonville, AR 72716 PLASTIC TUBE Do Not Recycle how2recycle.info Made in the USA with domestic and imported ingredients. Factory Certified",
-      "Warnings: For external use only. Discontinue use if signs of irritation appear. If condition worsens consult a doctor. Do not use over deep, infected, or puncture wounds.",
-      "Stop use and ask a doctor If condition worsens, or if symptoms persist for more than 7 days or clear up and occur again within a few days",
-      "Adverse reactions DISTRIBUTED BY MEIJER DISTRIBUTION, INC GRAND RAPIDS, MI 49544 www.meijer.com"
-    ]
-  },
-  {
-    "name": "niacinamide",
-    "normalizedName": "niacinamide",
-    "riskLevel": "high",
-    "riskScore": 40,
-    "description": "PURPOSE Purpose: Humectant Uses Uses: Firming & Nourishing Purpose Sunscreen",
-    "reviewBucket": "high_review_needed",
-    "category": "regulatory",
-    "source": "OPENFDA_DRUG_LABEL",
-    "aliases": [
-      "SALICYLIC ACID",
-      "EVEN TONE PLUS NIACINAMIDE APPLE BLOSSOM AND MANGO BUTTER DRY SPRAY 72H ANTIPERSPIRANT DEODORANT",
-      "ALUMINUM SESQUICHLOROHYDRATE",
-      "EVEN TONE PLUS NIACINAMIDE PEACH BLOSSOM AND RICE MILK DRY SPRAY 72H ANTIPERSPIRANT DEODORANT"
-    ],
-    "concerns": [
-      "WARNINGS Warnings: For external use only 1. When you feel irregular response on the applied area such as red spots, swollen skin, itching or rash caused by exposure to direct sunlight, please consult a dermatologist 2. Do not apply to the areas of skin with wounds or other skin problems 3. Cautions on storage 1) Keep out of the reach of children 2) Do not store in direct sunlight",
-      "WARNINGS For external use only. Do not use on damaged or broken skin. When using this product keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash occurs. Keep out of reach of children. If product is swallowed, get medical help or contact a Poison Control Center right away.",
-      "Warnings For external use only",
-      "Warnings • FLAMMABLE. DO NOT USE NEAR HEAT, FLAME, OR WHILE SMOKING. CAN CAUSE SERIOUS INJURY OR DEATH • Keep away from face and mouth to avoid breathing in. • Avoid spraying in eyes. Contents under pressure. Do not puncture or incinerate. Do not expose to heat or store at temperatures above 120°F/50°C or in enclosed places that could overheat • Do not use on broken skin. Stop use if rash or irritation occurs. • Ask a doctor before using if you have kidney disease. • USE ONLY AS DIRECTED. INTENTIONAL MISUSE BY DELIBERATELY CONCENTRATING AND INHALING THE CONTENTS CAN BE HARMFUL OR FATAL. Help stop inhalation abuse. For information visit www.inhalant.org"
-    ]
-  },
-  {
-    "name": "zinc oxide",
-    "normalizedName": "zinc oxide",
-    "riskLevel": "high",
-    "riskScore": 40,
-    "description": "Purpose Sunscreen Uses Multi-purpose mineral powder provides broad-spectrum SPF 46 PA+++ protection. Leaves the skin flawless and protected. Skin protectant - Diaper rash treatment",
-    "reviewBucket": "high_review_needed",
-    "category": "regulatory",
-    "source": "OPENFDA_DRUG_LABEL",
-    "aliases": [
-      "ADENOSINE, NIACINAMIDE",
-      "ADENOSINE",
-      "NIACINAMIDE"
-    ],
-    "concerns": [
-      "Warnings For external use only.",
-      "Allergens: almond For external use only. When using this product avoid contact with eyes. If contact occurs, rinse thoroughly with water. Stop use and consult a doctor if symptoms worsen or last for more than 7 days. Keep out of reach of children. If swallowed, call a poison control centre or get edical help right away.",
-      "Stop use and consult a doctor if symptoms worsen or last for more than 7 days.",
-      "For external use only Do not use on damaged or broken skin When using this product keep out of eyes. Rinse with water to remove Stop use and ask doctor if rash occurs",
-      "Warnings For external use only When using this product: keep out of eyes. Rinse with water to remove Stop use and ask a doctor if: condition worsens. If symptoms last more than 7 days or clear up and occur again within a few days Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away",
-      "Stop use and ask a doctor if: condition worsens. If symptoms last more than 7 days or clear up and occur again within a few days",
-      "Precautions when using 1. When using cosmetics or after use, if there are any abnormal symptoms or side effects such as red spots, swelling, or itching in the area of use due to direct sunlight, consult with a specialist. 2. Refrain from using on areas with scars, etc. 3. Precautions for storage and handling A) Keep out of reach of children B) Store away from direct sunlight."
-    ]
-  },
-  {
-    "name": "titanium dioxide",
-    "normalizedName": "titanium dioxide",
-    "riskLevel": "high",
-    "riskScore": 40,
-    "description": "Purpose Sunscreen Uses Multi-purpose mineral powder provides broad-spectrum SPF 46 PA+++ protection. Leaves the skin flawless and protected. Purpose Pain reliever/fever reducer",
-    "reviewBucket": "high_review_needed",
-    "category": "regulatory",
-    "source": "OPENFDA_DRUG_LABEL",
-    "aliases": [
-      "ACETAMINOPHEN",
-      "ESOMEPRAZOLE MAGNESIUM"
-    ],
-    "concerns": [
-      "Warnings For external use only.",
-      "Warnings Liver warning: This product contains acetaminophen. Severe liver damage may occur if you take more than 4,000 mg of acetaminophen in 24 hours with other drugs containing acetaminophen 3 or more alcoholic drinks every day while using this product Allergy alert: Acetaminophen may cause severe skin reactions. Symptoms may include: skin reddening blisters rash If a skin reaction occurs, stop use and seek medical help right away. Do not use if you are allergic to acetaminophen or any of the inactive ingredients in this product with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist. Ask a doctor before use if you have liver disease. Ask a doctor or pharmacist before use if you are taking the blood thinning drug warfarin. Stop use and ask a doctor if new symptoms occur pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present These could be signs of a serious condition. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away. Prompt medical attention is critical for adults as well as for children even if you do not notice any signs or symptoms.",
-      "Do not use if you are allergic to acetaminophen or any of the inactive ingredients in this product with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist.",
-      "Stop use and ask a doctor if new symptoms occur pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present These could be signs of a serious condition.",
-      "Ask a doctor before use if you have liver disease.",
-      "If pregnant or breast-feeding, ask a health professional before use.",
-      "Warnings Allergy alert : Do not use if you are allergic to esomeprazole. Esomeprazole may cause severe skin reactions. Symptoms may include: skin reddening blisters rash If an allergic reaction occurs, stop use and seek medical help right away.",
-      "Do not use if you have: trouble or pain swallowing food, vomiting with blood, or bloody or black stools heartburn with lightheadedness, sweating or dizziness chest pain or shoulder pain with shortness of breath; sweating; pain spreading to arms, neck or shoulders; or lightheadedness frequent chest pain These may be signs of a serious condition. See your doctor.",
-      "Stop use and ask a doctor if your heartburn continues or worsens you need to take this product for more than 14 days you need to take more than 1 course of treatment every 4 months you get diarrhea you develop a rash or joint pain",
-      "Ask a doctor before use if you have had heartburn over 3 months. This may be a sign of a more serious condition. frequent wheezing, particularly with heartburn unexplained weight loss nausea or vomiting stomach pain",
-      "WARNINGS For external use only. Do not use on damaged or broken skin. When using this product keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash occurs. Keep out of reach of children. If product is swallowed, get medical help or contact a Poison Control Center right away."
-    ]
-  },
-  {
     "name": "benzoyl peroxide",
     "normalizedName": "benzoyl peroxide",
     "riskLevel": "high",
@@ -117,57 +21,85 @@
     ]
   },
   {
-    "name": "retinol",
-    "normalizedName": "retinol",
+    "name": "Cetearyl Alcohol",
+    "normalizedName": "cetearyl alcohol",
     "riskLevel": "high",
     "riskScore": 40,
-    "description": "Purpose External Analgesic Uses temporarily relieves itching PURPOSE SUNSCREEN",
+    "description": "Purpose Acne medication Use for the treatment of acne Purpose Anti-itch",
     "reviewBucket": "high_review_needed",
     "category": "regulatory",
     "source": "OPENFDA_DRUG_LABEL",
     "aliases": [
-      "BENZOCAINE, RESORCINOL",
-      "BENZOCAINE",
-      "RESORCINOL",
-      "MANUKA HONEY AND RETINOL SMOOTHING 48H ANTIPERSPIRANT DEODORANT",
-      "ALUMINUM SESQUICHLOROHYDRATE"
+      "SALICYLIC ACID",
+      "HYDROCORTISONE"
     ],
     "concerns": [
-      "Warnings For external use only. When using this product avoid contact with the eyes. Stop use and ask a doctor if condition worsens, or if symptoms persists for more than 7 days or clear up and occur again within a few days. Do not apply over large areas of the body. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
-      "Stop use and ask a doctor if condition worsens, or if symptoms persists for more than 7 days or clear up and occur again within a few days. Do not apply over large areas of the body.",
-      "WARNINGS Warnings For external use only Do not use on damaged or broken skin When using this product keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash occurs",
-      "Warnings • For external use only. • Do not use on broken skin . • Ask a doctor before use if you have kidney disease. • Stop use if rash or irritation occurs.",
-      "Warnings For external use only. When using this product • skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time. • avoid contact with eyes. If contact occurs, rinse thoroughly with water. Allergy Alert. Do not use this product if you have a known allergy to Salicylic Acid. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
-      "If pregnant or breast-feeding, ask a health professional before use.",
-      "Allergy Alert. Do not use this product if you have a known allergy to Salicylic Acid.",
-      "Warnings For external use only Do not use if you • have sensitive skin • are sensitive to Benzoyl Peroxide When using this product • skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time. • rinse right away with water if product gets in eyes • avoid unnecessary sun exposure and use a sunscreen • avoid contact with the eyes, lips and mouth • avoid contact with hair and dyed fabrics, which may be bleached by this product • skin irritation may occur, characterized by redness, burning, itching, peeling or possibly swelling. Irritation may be reduced by using the product less frequently or in a lower concentration. Stop use and ask a doctor if skin irritation becomes severe Keep out of reach of children . If swallowed, get medical help or contact a Poison Control Center right away.",
-      "Warnings For external use only Do not use if you • have very sensitive skin • are sensitive to Benzoyl Peroxide When using this product • skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time. • rinse right away with water if product gets in eyes • avoid unnecessary sun exposure and use a sunscreen • avoid contact with the eyes, lips and mouth • avoid contact with hair and dyed fabrics, which may be bleached by this product • skin irritation may occur, characterized by redness, burning, itching, peeling or possibly swelling. Irritation may be reduced by using the product less frequently or in a lower concentration..",
-      "Do not use if you • have sensitive skin • are sensitive to Benzoyl Peroxide",
-      "Stop use and ask a doctor if skin irritation becomes severe"
+      "Warnings For external use only",
+      "ADVERSE REACTION Information: 1-888-287-1915 or Walmart.com/help DISTRIBUTED BY: Walmart Inc., Bentonville, AR 72716 PLASTIC TUBE Do Not Recycle how2recycle.info Made in the USA with domestic and imported ingredients. Factory Certified",
+      "Warnings For external use only Do not use • in the genital area if you have a vaginal discharge. Consult a doctor. • for the treatment of diaper rash. Consult a doctor. When using this product • avoid contact with the eyes • do not use more than directed unless told to do so by a doctor • do not put directly into the rectum by using fingers or any mechanical device or applicator Stop use and ask a doctor if • condition worsens symptoms persist for more than 7 days or clear up and occur again within a few days, and do not begin use of any other hydrocortisone product unless you have asked a doctor • rectal bleeding occurs Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
+      "Do not use • in the genital area if you have a vaginal discharge. Consult a doctor. • for the treatment of diaper rash. Consult a doctor.",
+      "Stop use and ask a doctor if • condition worsens symptoms persist for more than 7 days or clear up and occur again within a few days, and do not begin use of any other hydrocortisone product unless you have asked a doctor • rectal bleeding occurs",
+      "Warnings For external use only. Avoid contact with eyes. Not for prolonged use. Do not use in large quantities, particularly over raw surfaces or blistered areas.",
+      "Stop Use and Ask a Doctor if the condition worsens ■ symptoms persist for more than seven days or clear up and occur again within a few days. Rash or irritation develops, persists, or increases. If pregnant or breastfeeding, ask a health professional before use.",
+      "Warnings For external use only. Stop use and ask doctor if rash occurs. Do not use on damaged or broken skin. When using this product keep out of eyes. Rinse with water to remove. Keep out of the reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+      "Do not use on damaged or broken skin.",
+      "Stop use and ask doctor if rash occurs.",
+      "Warnings For external use only. Do not use on children under 2 years of age unless directed by a doctor. When using this product avoid contact with the eyes. Stop use and ask a doctor if irritation occurs or if there is no improvement within 2 weeks for josck itch or within 4 weeks for athlete's foor and ringworm. Keep out of reach of children. If swallowed, get medical help or contact a Posion Control Center right away."
     ]
   },
   {
-    "name": "phenoxyethanol",
-    "normalizedName": "phenoxyethanol",
+    "name": "Citric Acid",
+    "normalizedName": "citric acid",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Purpose Antibacterial Use For handwashing to decrease bacteria on the skin Purpose-Nasal Decongestant",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [
+      "BENZALKONIUM CHLORIDE",
+      "POVIDONE-IODINE"
+    ],
+    "concerns": [
+      "Warnings For external use only: hands only",
+      "Stop use and ask a doctor if irritation and redness develop condition persists for more than 72 hours",
+      "Do not exceed recommended dosage. If dizziness or sleeplessness occur, symptoms do not improve or are accompanied by a fever-consult a doctor. Do not exceed recommended dosage. If dizziness or sleeplessness occur, consult a doctor. Drug interaction Precaution: Do not use this product if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (Certain drugs for depression, psychiatric, or emotional conditions, or Parkinson's disease), or for 2 weeks after stopping the MAOI drug. If you are uncertain whether your prescription drug contains an MAOI, consult a health professional before using this product.",
+      "if pregnant or breast feeding a baby, consult a health professional before use.",
+      "Warnings Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product. Ask a doctor before use if you have heart disease diabetes high blood pressure thyroid disease trouble urinating due to an enlarged prostate gland cough that occurs with too much phlegm (mucus) cough that lasts or is chronic such as occurs with smoking, asthma, chronic bronchitis or emphysema Ask a doctor or pharmacist before use if you are taking any other oral nasal decongestant or stimulant. When using this product, do not use more than directed. Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not get better within 7 days or are accompanied by fever cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache. These could be signs of a serious condition. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center (1800-222-122) right away.",
+      "Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product.",
+      "Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not get better within 7 days or are accompanied by fever cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache. These could be signs of a serious condition.",
+      "Ask a doctor before use if you have heart disease diabetes high blood pressure thyroid disease trouble urinating due to an enlarged prostate gland cough that occurs with too much phlegm (mucus) cough that lasts or is chronic such as occurs with smoking, asthma, chronic bronchitis or emphysema",
+      "If pregnant or breast-feeding, ask a health professional before use.",
+      "Warnings: Do not use if allergic to iodine For external use only Do not use in eyes Avoid pooling beneath patient. Prolonged exposure to wet solution may cause skiin irritation.",
+      "Ask a doctor before use if injuries are deep or puncture wounds Serious burns Stop use and ask a doctor if Redness, irritation, swelling or pain persisits or increases Infection occurs",
+      "For external use only",
+      "Stop use and ask a doctor if irritation or redness develops"
+    ]
+  },
+  {
+    "name": "Dimethicone",
+    "normalizedName": "dimethicone",
     "riskLevel": "high",
     "riskScore": 40,
     "description": "Purpose Sunscreen Uses Multi-purpose mineral powder provides broad-spectrum SPF 46 PA+++ protection. Leaves the skin flawless and protected. Uses • helps prevent sunburn • higher SPF gives more sunburn protection",
     "reviewBucket": "high_review_needed",
     "category": "regulatory",
     "source": "OPENFDA_DRUG_LABEL",
-    "aliases": [],
+    "aliases": [
+      "ALUMINUM CHLOROHYDRATE"
+    ],
     "concerns": [
       "Warnings For external use only.",
-      "Warnings For external use only. Avoid contact with eyes. Not for prolonged use. Do not use in large quantities, particularly over raw surfaces or blistered areas.",
-      "Stop Use and Ask a Doctor if the condition worsens ■ symptoms persist for more than seven days or clear up and occur again within a few days. Rash or irritation develops, persists, or increases. If pregnant or breastfeeding, ask a health professional before use.",
-      "Warnings For external use only. Stop use and ask doctor if rash occurs. Do not use on damaged or broken skin. When using this product keep out of eyes. Rinse with water to remove. Keep out of the reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
-      "Do not use on damaged or broken skin.",
-      "Stop use and ask doctor if rash occurs.",
-      "Warnings For external use only. Flammable. Keep away from heat or flame. Do not use: in children less than 2 months of age and open skin wounds When using this product keep out of eyes, ears, and mouth. In case of contact with eyes, rinse thoroughly with water. Stop use and ask doctor if irritation or rash occurs. Keep out of reach of children. If swallowed, get medical help or contact Poison Control Center right away."
+      "Warnings For external use only. Flammable • do not spray near flame or while smoking • contents under pressure • do not crush, puncture or incinerate • do not store at temperature above 120°F Do not use on broken skin Ask a doctor before use if you have kidney disease When using this product • keep away from face and mouth to avoid breathing it • avoid spraying in eyes • use only as directed; intentional misuse by deliberately concentrating and inhaling the contents can be harmful or fatal Stop use if rash or irritation occurs Keep out of reach of children. lf swallowed, get medical help or contact a Poison Control Center right away.",
+      "Do not use on broken skin",
+      "Stop use if rash or irritation occurs",
+      "Ask a doctor before use if you have kidney disease",
+      "WARNINGS Warnings: For external use only 1. When you feel irregular response on the applied area such as red spots, swollen skin, itching or rash caused by exposure to direct sunlight, please consult a dermatologist 2. Do not apply to the areas of skin with wounds or other skin problems 3. Cautions on storage 1) Keep out of the reach of children 2) Do not store in direct sunlight",
+      "Warnings For external use only. Do not use on broken skin Ask a doctor before use if you have kidney disease Stop use if rash or irritation occurs Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away."
     ]
   },
   {
-    "name": "fragrance",
+    "name": "Fragrance",
     "normalizedName": "fragrance",
     "riskLevel": "high",
     "riskScore": 40,
@@ -195,40 +127,7 @@
     ]
   },
   {
-    "name": "hyaluronic acid",
-    "normalizedName": "hyaluronic acid",
-    "riskLevel": "high",
-    "riskScore": 40,
-    "description": "Purpose Acne treatment Uses clears acne blemishes and allows skin to heal helps prevent new acne blemishes from forming PURPOSE Hair regrowth treatment for men and women",
-    "reviewBucket": "high_review_needed",
-    "category": "regulatory",
-    "source": "OPENFDA_DRUG_LABEL",
-    "aliases": [
-      "SALICYLIC ACID",
-      "MINOXIDIL",
-      "VAGINAL CREAM",
-      "MELALEUCA CAJUPUTI WHOLE",
-      "THYMOL"
-    ],
-    "concerns": [
-      "Warnings For external use only",
-      "WARNINGS For external use only. Extremely Flammable: Avoid Fire, flame, or smoking during and immediately following application.",
-      "Do not use if: the amount of hair loss is different the amount that is shown on the carton or your hair loss is on the front of the scalp. 5% Minoxidil Form is not intended for frontal baldness of receding hairline. you have no family history of hair loss your hair is sudden and/or patchy you do not know the reason for your hair loss you are 18 years of age. Do not use on babies and children your scalp is red, inflamed, infected, irritated, or painful you use other medicines on the scalp",
-      "Stop use and ask a doctor if chest pain, rapid heartbeat, faintness, or dizziness occurs sudden, unexplained weight gain occurs your hands or feet swell scalp irritation or redness occurs unwanted facial hair growth occurs you do not see hair regrowth within 4 months",
-      "Ask a doctor before use if you have heart disease.",
-      "Warnings Do not use the product to areas with scars, eczema, or dermatitis Ask a doctor before use if you have ■ irritation ■ rash ■ red spots on skin ■ swelling Ask a doctor or pharmacist before use if you are in later stage of pregnancy. When using this product ■ this product is for external use only ■ this product is not suitable for children under 3 years of age ■ keep out of direct sunlight Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center immediately.",
-      "Warnings Do not use the product to areas with scars, eczema, or dermatitis",
-      "Warnings Stop use and ask a doctor if irritation, rash, red spots on skin, or swelling occurs.",
-      "For vaginal use only. FemiClear may damage condoms and diaphragms and cause them to fail. FemiClear does not prevent sexually transmitted infections (STIs). Practice safer sex by using a latex or polyurethane condom to reduce the risk of getting STIs. FemiClear does not eliminate the risk of infections.",
-      "if you are allergic to any ingredient in this product",
-      " rash or allergic reaction develops  vaginal symptoms develop  you get a rash or hives, abdominal pain, fever, chills, nausea or vomiting",
-      "ask a healthcare professional before use.",
-      "Do not use on damaged or broken skin",
-      "Stop use and ask a doctor if rash occurs"
-    ]
-  },
-  {
-    "name": "glycerin",
+    "name": "Glycerin",
     "normalizedName": "glycerin",
     "riskLevel": "high",
     "riskScore": 40,
@@ -255,6 +154,220 @@
       "Stop use and ask a doctor if • you experience any of the following signs of stomach bleeding: • feel faint • vomit blood • have bloody or black stools • have stomach pain that does not get better • pain gets worse or lasts more than 10 days • fever gets worse or lasts more than 3 days • redness or swelling is present in the painful area • any new symptoms appear • you have difficulty swallowing • it feels like the capsule is stuck in your throat",
       "Ask a doctor before use if • the stomach bleeding warning applies to you • you have a history of stomach problems, such as heartburn • you have high blood pressure, heart disease, liver cirrhosis, or kidney disease • you are taking a diuretic • you have problems or serious side effects from taking pain relievers or fever reducers • you have asthma",
       "If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use naproxen sodium during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery."
+    ]
+  },
+  {
+    "name": "Hyaluronic Acid",
+    "normalizedName": "hyaluronic acid",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Purpose Acne treatment Uses clears acne blemishes and allows skin to heal helps prevent new acne blemishes from forming PURPOSE Hair regrowth treatment for men and women",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [
+      "SALICYLIC ACID",
+      "MINOXIDIL",
+      "MELALEUCA CAJUPUTI WHOLE",
+      "THYMOL"
+    ],
+    "concerns": [
+      "Warnings For external use only",
+      "WARNINGS For external use only. Extremely Flammable: Avoid Fire, flame, or smoking during and immediately following application.",
+      "Do not use if: the amount of hair loss is different the amount that is shown on the carton or your hair loss is on the front of the scalp. 5% Minoxidil Form is not intended for frontal baldness of receding hairline. you have no family history of hair loss your hair is sudden and/or patchy you do not know the reason for your hair loss you are 18 years of age. Do not use on babies and children your scalp is red, inflamed, infected, irritated, or painful you use other medicines on the scalp",
+      "Stop use and ask a doctor if chest pain, rapid heartbeat, faintness, or dizziness occurs sudden, unexplained weight gain occurs your hands or feet swell scalp irritation or redness occurs unwanted facial hair growth occurs you do not see hair regrowth within 4 months",
+      "Ask a doctor before use if you have heart disease.",
+      "Warnings Do not use the product to areas with scars, eczema, or dermatitis Ask a doctor before use if you have ■ irritation ■ rash ■ red spots on skin ■ swelling Ask a doctor or pharmacist before use if you are in later stage of pregnancy. When using this product ■ this product is for external use only ■ this product is not suitable for children under 3 years of age ■ keep out of direct sunlight Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center immediately.",
+      "Warnings Do not use the product to areas with scars, eczema, or dermatitis",
+      "Warnings Stop use and ask a doctor if irritation, rash, red spots on skin, or swelling occurs.",
+      "For vaginal use only. FemiClear may damage condoms and diaphragms and cause them to fail. FemiClear does not prevent sexually transmitted infections (STIs). Practice safer sex by using a latex or polyurethane condom to reduce the risk of getting STIs. FemiClear does not eliminate the risk of infections.",
+      "if you are allergic to any ingredient in this product",
+      " rash or allergic reaction develops  vaginal symptoms develop  you get a rash or hives, abdominal pain, fever, chills, nausea or vomiting",
+      "ask a healthcare professional before use.",
+      "Do not use on damaged or broken skin",
+      "Stop use and ask a doctor if rash occurs"
+    ]
+  },
+  {
+    "name": "Lactic Acid",
+    "normalizedName": "lactic acid",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Purpose Pain reliever/fever reducer Uses • temporarily relieves minor aches and pains due to: • minor pain of arthritis • muscular aches • backache • menstrual cramps • headache • toothache • the common cold • temporarily reduces fever Purposes Cough suppressant Expectorant Nasal decongestant",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [],
+    "concerns": [
+      "Warnings Allergy alert: Naproxen sodium may cause a severe allergic reaction, especially in people allergic to aspirin. Symptoms may include: • hives • facial swelling • asthma (wheezing) • shock • skin reddening • rash • blisters If an allergic reaction occurs, stop use and seek medical help right away. Stomach bleeding warning: This product contains an NSAID, which may cause severe stomach bleeding. The chance is higher if you: • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks every day while using this product • take more or for a longer time than directed Do not use • if you have ever had an allergic reaction to any other pain reliever/fever reducer • right before or after heart surgery Ask a doctor before use if • the stomach bleeding warning applies to you • you have a history of stomach problems, such as heartburn • you have high blood pressure, heart disease, liver cirrhosis, or kidney disease • you are taking a diuretic • you have problems or serious side effects from taking pain relievers or fever reducers • you have asthma Ask a doctor or pharmacist before use if you are • under a doctor’s care for any serious condition • taking any other drug When using this product • take with food or milk if stomach upset occurs • the risk of heart attack or stroke may increase if you use more than directed or for longer than directed Stop use and ask a doctor if • you experience any of the following signs of stomach bleeding: • feel faint • vomit blood • have bloody or black stools • have stomach pain that does not get better • pain gets worse or lasts more than 10 days • fever gets worse or lasts more than 3 days • redness or swelling is present in the painful area • any new symptoms appear • you have difficulty swallowing • it feels like the capsule is stuck in your throat If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use naproxen sodium during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)",
+      "Do not use • if you have ever had an allergic reaction to any other pain reliever/fever reducer • right before or after heart surgery",
+      "Stop use and ask a doctor if • you experience any of the following signs of stomach bleeding: • feel faint • vomit blood • have bloody or black stools • have stomach pain that does not get better • pain gets worse or lasts more than 10 days • fever gets worse or lasts more than 3 days • redness or swelling is present in the painful area • any new symptoms appear • you have difficulty swallowing • it feels like the capsule is stuck in your throat",
+      "Ask a doctor before use if • the stomach bleeding warning applies to you • you have a history of stomach problems, such as heartburn • you have high blood pressure, heart disease, liver cirrhosis, or kidney disease • you are taking a diuretic • you have problems or serious side effects from taking pain relievers or fever reducers • you have asthma",
+      "If pregnant or breast-feeding, ask a health professional before use. It is especially important not to use naproxen sodium during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery.",
+      "Warnings Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product. Ask a doctor before use if you have heart disease diabetes high blood pressure thyroid disease trouble urinating due to an enlarged prostate gland cough that occurs with too much phlegm (mucus) cough that lasts or is chronic such as occurs with smoking, asthma, chronic bronchitis or emphysema Ask a doctor or pharmacist before use if you are taking any other oral nasal decongestant or stimulant. When using this product, do not use more than directed. Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not get better within 7 days or are accompanied by fever cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache. These could be signs of a serious condition. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center (1800-222-122) right away.",
+      "Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product.",
+      "Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not get better within 7 days or are accompanied by fever cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache. These could be signs of a serious condition.",
+      "Ask a doctor before use if you have heart disease diabetes high blood pressure thyroid disease trouble urinating due to an enlarged prostate gland cough that occurs with too much phlegm (mucus) cough that lasts or is chronic such as occurs with smoking, asthma, chronic bronchitis or emphysema",
+      "If pregnant or breast-feeding, ask a health professional before use.",
+      "Warnings - If you have diabetes or poor blood circulation - On irritated skin or any area that is inflflated or reddened - On moles,birthmarks,warts with hair growing from them, genital warts, or warts on the face or mucous membranes",
+      "Cautions - For external use only - Flammable, keep away from fire and flames - Pregnant women, lactating women, people with allergies, children under 3 years old, and people with damaged skin should avoid using it",
+      "If swallowed by mistake, get medical help or contact a Poison Control Center right away.",
+      "​Warnings █ Stop use and consult a physician if symptoms worsen or persist for more than 7 days If pregnant or breast-feeding, ask a healthcare professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center immediately.",
+      "If pregnant or breast-feeding, ask a healthcare professional before use.",
+      "WARNINGS Warning: 1. In case of having following symptoms after using this, you're advised to stop using it immediately. If you keep using it, the symptoms will get worse and need to consult a dermatologist. 1) In case of having problems such as red rash, swollenness, itching, stimulation during usage. 2) In case of having the same symptoms above on the part you put this product on by direct sunlight. 2. You are banned to use it on the part where you have a scar, eczema, or dermatitis. 3. In case of getting it into your eyes, you have to wash it immediately."
+    ]
+  },
+  {
+    "name": "Niacinamide",
+    "normalizedName": "niacinamide",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "PURPOSE Purpose: Humectant Uses Uses: Firming & Nourishing Purpose Sunscreen",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [
+      "SALICYLIC ACID",
+      "ALUMINUM SESQUICHLOROHYDRATE"
+    ],
+    "concerns": [
+      "WARNINGS Warnings: For external use only 1. When you feel irregular response on the applied area such as red spots, swollen skin, itching or rash caused by exposure to direct sunlight, please consult a dermatologist 2. Do not apply to the areas of skin with wounds or other skin problems 3. Cautions on storage 1) Keep out of the reach of children 2) Do not store in direct sunlight",
+      "WARNINGS For external use only. Do not use on damaged or broken skin. When using this product keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash occurs. Keep out of reach of children. If product is swallowed, get medical help or contact a Poison Control Center right away.",
+      "Warnings For external use only",
+      "Warnings • FLAMMABLE. DO NOT USE NEAR HEAT, FLAME, OR WHILE SMOKING. CAN CAUSE SERIOUS INJURY OR DEATH • Keep away from face and mouth to avoid breathing in. • Avoid spraying in eyes. Contents under pressure. Do not puncture or incinerate. Do not expose to heat or store at temperatures above 120°F/50°C or in enclosed places that could overheat • Do not use on broken skin. Stop use if rash or irritation occurs. • Ask a doctor before using if you have kidney disease. • USE ONLY AS DIRECTED. INTENTIONAL MISUSE BY DELIBERATELY CONCENTRATING AND INHALING THE CONTENTS CAN BE HARMFUL OR FATAL. Help stop inhalation abuse. For information visit www.inhalant.org"
+    ]
+  },
+  {
+    "name": "Nicotinamide",
+    "normalizedName": "nicotinamide",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "skin protect How to use; At the last stage of basic care, apply an appropriate amount to the face, neck, arms, and legs that are easily exposed to UV rays. Purpose Sunscreen",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [
+      "ADENOSINE, NIACINAMIDE",
+      "ADENOSINE",
+      "NIACINAMIDE"
+    ],
+    "concerns": [
+      "Precautions when using 1. When using cosmetics or after use, if there are any abnormal symptoms or side effects such as red spots, swelling, or itching in the area of use due to direct sunlight, consult with a specialist. 2. Refrain from using on areas with scars, etc. 3. Precautions for storage and handling A) Keep out of reach of children B) Store away from direct sunlight.",
+      "Warnings For external use only. When using this product keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash or irritation develops and lasts. Keep out of reach of children . If swallowed, get medical help or contact a Poison Control Center right away.",
+      "Stop use and ask a doctor if rash or irritation develops and lasts.",
+      "Instructions on box Do not Use as a substitute for sleep. This product is intended for accosional use only in children under 12 years of age",
+      "If pregnant or breast feeding, ask a health professional before use.",
+      "Warnings: Do not use: 1. as a substitute for sleep. This product is intended for occasional use only. 2. in children under 12 years of age. 3. If pregnant or breastfeeding, consult a healthcare professional before use. 4. Keep out of reach of children. In case of overdose, seek immediate medical attention or contact a poison control center. 5. Stop use and ask a doctor if fatigue or drowsiness persists or continues to recur.",
+      "Do not use besides the intended use. If swallowed, consult a physician immediately. Please keep out of reach of children. Avoid direct sunlight",
+      "Do Not Use as substitute for sleep. This product is intended for occasional use only.",
+      "Adults and children 12 years of age and over: take 2 capsules not more often than every 3 to 4 hours",
+      "1. as aubstitute for sleep. This product is intended for occastional use only. 2. In children under 12 years of age",
+      "If pregrant or breast feeding, ask a health professional before use."
+    ]
+  },
+  {
+    "name": "Phenoxyethanol",
+    "normalizedName": "phenoxyethanol",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Purpose Sunscreen Uses Multi-purpose mineral powder provides broad-spectrum SPF 46 PA+++ protection. Leaves the skin flawless and protected. Uses • helps prevent sunburn • higher SPF gives more sunburn protection",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [],
+    "concerns": [
+      "Warnings For external use only.",
+      "Warnings For external use only. Avoid contact with eyes. Not for prolonged use. Do not use in large quantities, particularly over raw surfaces or blistered areas.",
+      "Stop Use and Ask a Doctor if the condition worsens ■ symptoms persist for more than seven days or clear up and occur again within a few days. Rash or irritation develops, persists, or increases. If pregnant or breastfeeding, ask a health professional before use.",
+      "Warnings For external use only. Stop use and ask doctor if rash occurs. Do not use on damaged or broken skin. When using this product keep out of eyes. Rinse with water to remove. Keep out of the reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+      "Do not use on damaged or broken skin.",
+      "Stop use and ask doctor if rash occurs.",
+      "Warnings For external use only. Flammable. Keep away from heat or flame. Do not use: in children less than 2 months of age and open skin wounds When using this product keep out of eyes, ears, and mouth. In case of contact with eyes, rinse thoroughly with water. Stop use and ask doctor if irritation or rash occurs. Keep out of reach of children. If swallowed, get medical help or contact Poison Control Center right away."
+    ]
+  },
+  {
+    "name": "Retinol",
+    "normalizedName": "retinol",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Purpose External Analgesic Uses temporarily relieves itching PURPOSE SUNSCREEN",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [
+      "BENZOCAINE, RESORCINOL",
+      "BENZOCAINE",
+      "RESORCINOL",
+      "ALUMINUM SESQUICHLOROHYDRATE"
+    ],
+    "concerns": [
+      "Warnings For external use only. When using this product avoid contact with the eyes. Stop use and ask a doctor if condition worsens, or if symptoms persists for more than 7 days or clear up and occur again within a few days. Do not apply over large areas of the body. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+      "Stop use and ask a doctor if condition worsens, or if symptoms persists for more than 7 days or clear up and occur again within a few days. Do not apply over large areas of the body.",
+      "WARNINGS Warnings For external use only Do not use on damaged or broken skin When using this product keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash occurs",
+      "Warnings • For external use only. • Do not use on broken skin . • Ask a doctor before use if you have kidney disease. • Stop use if rash or irritation occurs.",
+      "Warnings For external use only. When using this product • skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time. • avoid contact with eyes. If contact occurs, rinse thoroughly with water. Allergy Alert. Do not use this product if you have a known allergy to Salicylic Acid. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+      "If pregnant or breast-feeding, ask a health professional before use.",
+      "Allergy Alert. Do not use this product if you have a known allergy to Salicylic Acid.",
+      "Warnings For external use only Do not use if you • have sensitive skin • are sensitive to Benzoyl Peroxide When using this product • skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time. • rinse right away with water if product gets in eyes • avoid unnecessary sun exposure and use a sunscreen • avoid contact with the eyes, lips and mouth • avoid contact with hair and dyed fabrics, which may be bleached by this product • skin irritation may occur, characterized by redness, burning, itching, peeling or possibly swelling. Irritation may be reduced by using the product less frequently or in a lower concentration. Stop use and ask a doctor if skin irritation becomes severe Keep out of reach of children . If swallowed, get medical help or contact a Poison Control Center right away.",
+      "Warnings For external use only Do not use if you • have very sensitive skin • are sensitive to Benzoyl Peroxide When using this product • skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time. • rinse right away with water if product gets in eyes • avoid unnecessary sun exposure and use a sunscreen • avoid contact with the eyes, lips and mouth • avoid contact with hair and dyed fabrics, which may be bleached by this product • skin irritation may occur, characterized by redness, burning, itching, peeling or possibly swelling. Irritation may be reduced by using the product less frequently or in a lower concentration..",
+      "Do not use if you • have sensitive skin • are sensitive to Benzoyl Peroxide",
+      "Stop use and ask a doctor if skin irritation becomes severe"
+    ]
+  },
+  {
+    "name": "Salicylic Acid",
+    "normalizedName": "salicylic acid",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Uses: For the management of acne helps clear up acne blemishes, black heads, helps prevent the development of new acne pimples penetrates pores to reduce the number of acne pimples, white heads and black heads help keep skin clear of new acne pimples, white heads and black heads helps prevent new acne pimples, white heads and black heads from forming help prevent the development of new pimples, white heads and black heads Directions: Acne Clearing Cleanser Acne Clearing Tonic Acne Clearing Treatment 101 Purpose Acne medication",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [
+      "PETROLATUM AND LANOLIN",
+      "LANOLIN",
+      "PETROLATUM"
+    ],
+    "concerns": [
+      "Warnings: For external use only. Do not use if you have sensitive skin and/or are sensitive to [active ingredient] When using this product skin irritation and dryness is more likely to occur if you use another topical acne medication at the same time. If irritation occurs, only use one topical acne medication at a time avoid unnecessary sun exposure and use sun screen, Acne Clearing Moisture with SPF 45 skin irritation may occur, characterized by redness, burning, itching, peeling, and possibly swelling. Irritation may be reduced by using the product less frequently or in a lower concentration Stop use and ask a doctor if irritation becomes severe",
+      "Warnings For external use only",
+      "ADVERSE REACTION Information: 1-888-287-1915 or Walmart.com/help DISTRIBUTED BY: Walmart Inc., Bentonville, AR 72716 PLASTIC TUBE Do Not Recycle how2recycle.info Made in the USA with domestic and imported ingredients. Factory Certified",
+      "Warnings: For external use only. Discontinue use if signs of irritation appear. If condition worsens consult a doctor. Do not use over deep, infected, or puncture wounds.",
+      "Stop use and ask a doctor If condition worsens, or if symptoms persist for more than 7 days or clear up and occur again within a few days",
+      "Adverse reactions DISTRIBUTED BY MEIJER DISTRIBUTION, INC GRAND RAPIDS, MI 49544 www.meijer.com"
+    ]
+  },
+  {
+    "name": "Sodium Benzoate",
+    "normalizedName": "sodium benzoate",
+    "riskLevel": "high",
+    "riskScore": 40,
+    "description": "Purpose Antibacterial Use For handwashing to decrease bacteria on the skin Purpose-Nasal Decongestant",
+    "reviewBucket": "high_review_needed",
+    "category": "regulatory",
+    "source": "OPENFDA_DRUG_LABEL",
+    "aliases": [
+      "BENZALKONIUM CHLORIDE",
+      "SODIUM FLUORIDE",
+      "OCTISALATE, TITANIUM DIOXIDE",
+      "OCTISALATE",
+      "TITANIUM DIOXIDE"
+    ],
+    "concerns": [
+      "Warnings For external use only: hands only",
+      "Stop use and ask a doctor if irritation and redness develop condition persists for more than 72 hours",
+      "Do not exceed recommended dosage. If dizziness or sleeplessness occur, symptoms do not improve or are accompanied by a fever-consult a doctor. Do not exceed recommended dosage. If dizziness or sleeplessness occur, consult a doctor. Drug interaction Precaution: Do not use this product if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (Certain drugs for depression, psychiatric, or emotional conditions, or Parkinson's disease), or for 2 weeks after stopping the MAOI drug. If you are uncertain whether your prescription drug contains an MAOI, consult a health professional before using this product.",
+      "if pregnant or breast feeding a baby, consult a health professional before use.",
+      "Warnings Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product. Ask a doctor before use if you have heart disease diabetes high blood pressure thyroid disease trouble urinating due to an enlarged prostate gland cough that occurs with too much phlegm (mucus) cough that lasts or is chronic such as occurs with smoking, asthma, chronic bronchitis or emphysema Ask a doctor or pharmacist before use if you are taking any other oral nasal decongestant or stimulant. When using this product, do not use more than directed. Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not get better within 7 days or are accompanied by fever cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache. These could be signs of a serious condition. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center (1800-222-122) right away.",
+      "Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product.",
+      "Stop use and ask a doctor if nervousness, dizziness, or sleeplessness occur symptoms do not get better within 7 days or are accompanied by fever cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache. These could be signs of a serious condition.",
+      "Ask a doctor before use if you have heart disease diabetes high blood pressure thyroid disease trouble urinating due to an enlarged prostate gland cough that occurs with too much phlegm (mucus) cough that lasts or is chronic such as occurs with smoking, asthma, chronic bronchitis or emphysema",
+      "If pregnant or breast-feeding, ask a health professional before use.",
+      "Warnings for this product",
+      "Adverse reactions Distributed By Meijer Distribution, Inc. Grand Rapids, MI 49544 www.meijer.com Our Quality Guarantee www.meijer.com/satisfcation Discard Seal, Empty & Replace Cap PLASTIC BOTTLE how2recycle.info",
+      "Warnings For external use only. Do not use on damaged or broken skin. When using this product, keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash occurs. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+      "Do not use on damaged or broken skin.",
+      "Stop use and ask a doctor if rash occurs."
     ]
   }
 ]
