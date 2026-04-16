@@ -39,26 +39,39 @@ export default function ProductAutocomplete({
   const [results, setResults] = useState<ProductOption[]>([]);
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     const trimmedQuery = query.trim();
 
     if (!trimmedQuery) {
       setResults([]);
+      setError("");
+      setOpen(false);
       return;
     }
 
     const timeout = setTimeout(async () => {
       try {
         setLoading(true);
+        setError("");
         const response = await fetch(
           `/api/products/search?q=${encodeURIComponent(trimmedQuery)}`
         );
         const data = await response.json();
-        setResults(Array.isArray(data) ? data : []);
+        if (!response.ok) {
+          setResults([]);
+          setError(data.error || "Search is unavailable right now.");
+          setOpen(true);
+          return;
+        }
+        const nextResults = Array.isArray(data) ? data : [];
+        setResults(nextResults);
         setOpen(true);
       } catch {
         setResults([]);
+        setError("Search is unavailable right now.");
+        setOpen(true);
       } finally {
         setLoading(false);
       }
@@ -105,6 +118,7 @@ export default function ProductAutocomplete({
       />
 
       {helperText && <p className="mt-2 text-sm text-neutral-500">{helperText}</p>}
+      {error && <p className="mt-2 text-sm text-rose-600">{error}</p>}
 
       {selectedLabel && (
         <p className="mt-2 text-sm text-neutral-600">
@@ -121,10 +135,14 @@ export default function ProductAutocomplete({
         </div>
       )}
 
-      {open && (results.length > 0 || loading) && (
+      {open && (results.length > 0 || loading || Boolean(error) || query.trim()) && (
         <div className="absolute z-20 mt-2 max-h-72 w-full overflow-auto rounded-2xl border border-neutral-200 bg-white p-2 shadow-lg">
           {loading ? (
             <div className="px-3 py-2 text-sm text-neutral-500">Searching products...</div>
+          ) : error ? (
+            <div className="px-3 py-2 text-sm text-rose-600">{error}</div>
+          ) : results.length === 0 ? (
+            <div className="px-3 py-2 text-sm text-neutral-500">No matching products found.</div>
           ) : (
             results.map((product) => (
               <button

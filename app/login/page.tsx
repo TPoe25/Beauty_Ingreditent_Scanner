@@ -1,29 +1,57 @@
-// app/login/page.tsx
-"use client"
+import { AuthError } from "next-auth";
+import { redirect } from "next/navigation";
+import { signIn } from "@/lib/auth";
+import LoginForm from "../components/LoginForm";
+import { auth } from "@/lib/auth";
 
-import { signIn } from "next-auth/react"
-import { useState } from "react"
+function getLoginErrorMessage(error: string | undefined) {
+  switch (error) {
+    case "invalid_credentials":
+      return "Sign-in failed. Check your email and password and try again.";
+    default:
+      return null;
+  }
+}
 
-// Login page component to handle user login
-export default function Login() {
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ callbackUrl?: string; error?: string }>;
+}) {
+  const session = await auth();
 
-    // Function to handle user login using NextAuth's signIn method
-    const handleLogin = async () => {
-        await signIn("credentials", {
-            email,
-            password,
-            callbackUrl: "/dashboard"
-        })
+  if (session?.user?.email) {
+    redirect("/dashboard");
+  }
+
+  const params = await searchParams;
+  const callbackUrl = params.callbackUrl || "/dashboard";
+  const error = getLoginErrorMessage(params.error);
+
+  async function loginAction(formData: FormData) {
+    "use server";
+
+    const email = String(formData.get("email") || "")
+      .trim()
+      .toLowerCase();
+    const password = String(formData.get("password") || "");
+
+    try {
+      await signIn("credentials", {
+        email,
+        password,
+        redirectTo: callbackUrl,
+      });
+    } catch (caughtError) {
+      if (caughtError instanceof AuthError) {
+        redirect(
+          `/login?callbackUrl=${encodeURIComponent(callbackUrl)}&error=invalid_credentials`
+        );
+      }
+
+      throw caughtError;
     }
-    // Render the login form with email and password inputs and a login button
-    return (
-        <div>
-            <h1>Login</h1>
-            <input onChange={e => setEmail(e.target.value)} />
-            <input onChange={e => setPassword(e.target.value)} type="password" />
-            <button onClick={handleLogin}>Login</button>
-        </div>
-    )
+  }
+
+  return <LoginForm callbackUrl={callbackUrl} error={error} action={loginAction} />;
 }

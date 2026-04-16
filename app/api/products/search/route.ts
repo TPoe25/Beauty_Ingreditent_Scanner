@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma";
+import { getDatabaseErrorMessage } from "@/lib/databaseErrors";
 
 export const runtime = "nodejs";
 
@@ -89,6 +90,12 @@ export async function GET(req: Request) {
     );
   } catch (error) {
     console.error("Product search failed", error);
+    const databaseMessage = getDatabaseErrorMessage(error);
+
+    if (databaseMessage) {
+      return Response.json({ error: databaseMessage }, { status: 503 });
+    }
+
     return Response.json({ error: "Unable to search products." }, { status: 500 });
   }
 }

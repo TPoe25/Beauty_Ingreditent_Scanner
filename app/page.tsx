@@ -11,25 +11,25 @@ export default function Home() {
                         </div>
 
                         <h1 className="text-5xl font-bold tracking-tight text-neutral-900 sm:text-6xl">
-                            Beauty product scanning, made clear.
+                            InciSight makes ingredient scanning clear.
                         </h1>
 
                         <p className="mt-6 max-w-xl text-lg leading-8 text-neutral-600">
                             Scan labels, understand ingredients, compare products, and get
-                            AI-powered explanations that actually make sense.
+                            AI-powered explanations that actually make sense with InciSight.
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-4">
                             <Link
                                 href="/dashboard"
-                                className="rounded-xl bg-neutral-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800"
+                                className="relative z-10 inline-flex cursor-pointer rounded-xl bg-neutral-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800"
                             >
                                 Start Scanning
                             </Link>
 
                             <Link
                                 href="/compare"
-                                className="rounded-xl border border-neutral-300 bg-white px-6 py-3 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-100"
+                                className="relative z-10 inline-flex cursor-pointer rounded-xl border border-neutral-300 bg-white px-6 py-3 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-100"
                             >
                                 Compare Products
                             </Link>
@@ -96,8 +96,8 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-rose-200/50 blur-2xl" />
-                        <div className="absolute -bottom-6 -right-6 h-28 w-28 rounded-full bg-amber-200/40 blur-2xl" />
+                        <div className="pointer-events-none absolute -left-6 -top-6 h-24 w-24 rounded-full bg-rose-200/50 blur-2xl" />
+                        <div className="pointer-events-none absolute -bottom-6 -right-6 h-28 w-28 rounded-full bg-amber-200/40 blur-2xl" />
                     </div>
                 </div>
             </section>

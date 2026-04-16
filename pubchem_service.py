@@ -82,7 +82,12 @@ async def name_to_cids(client: httpx.AsyncClient, q: str) -> List[int]:
     PUG-REST: name -> CID list
     """
     url = f"{PUBCHEM_BASE}/rest/pug/compound/name/{quote(q)}/cids/JSON"
-    data = await _get_json(client, url)
+    try:
+        data = await _get_json(client, url)
+    except httpx.HTTPStatusError as e:
+        if e.response.status_code in (400, 404):
+            return []
+        raise
     cids = data.get("IdentifierList", {}).get("CID", [])
     return [int(x) for x in cids]
 

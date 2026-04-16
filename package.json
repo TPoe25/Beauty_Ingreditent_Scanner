@@ -1,5 +1,5 @@
 {
-  "name": "beauty-scanner",
+  "name": "incisight",
   "private": true,
   "engines": {
     "node": ">=20.0.0"
@@ -14,6 +14,9 @@
     "postinstall": "prisma generate",
     "start": "next start",
     "lint": "eslint app lib prisma --ext .ts,.tsx",
+    "data:excel": "tsx scripts/transform-excel.ts",
+    "data:excel:all": "tsx scripts/transform-excel.ts data/raw data",
+    "data:cosing": "tsx scripts/transform-cosing.ts",
     "db:migrate": "prisma migrate dev",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:push": "prisma db push",
@@ -22,7 +25,8 @@
     "data:fda": "python3 -m services.fda_service --queries-file data/source_queries.txt --output data/fda.ingredients.json",
     "data:lit": "python3 -m services.literature_service --queries-file data/source_queries.txt --output data/literature.ingredients.json",
     "data:merge": "python3 -m core.filter_engine --base data/ingredients.final.json --extra data/fda.ingredients.json data/literature.ingredients.json --out data/ingredients.final.json",
-    "data:refresh": "npm run data:fda && npm run data:lit && npm run data:merge"
+    "data:refresh": "npm run data:fda && npm run data:lit && npm run data:merge",
+    "db:enrich:pubchem": "node --import tsx prisma/enrich-pubchem.ts"
   },
   "dependencies": {
     "@google-cloud/vision": "^5.3.5",
@@ -35,6 +39,7 @@
     "pg": "^8.20.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "xlsx": "^0.18.5",
     "zod": "4.3.6"
   },
   "devDependencies": {
